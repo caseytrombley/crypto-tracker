@@ -1,0 +1,12890 @@
+{
+  "A": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "A",
+        "E"
+      ],
+      "name": "A-5",
+      "midiKeys": [
+        69,
+        76
+      ],
+      "type": "major",
+      "longName": "Amaj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "F#"
+      ],
+      "name": "A-6",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        78
+      ],
+      "type": "major",
+      "longName": "Amaj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "G"
+      ],
+      "name": "A-7",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        79
+      ],
+      "type": "major",
+      "longName": "Amaj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "G",
+        "B"
+      ],
+      "name": "A-9",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        79,
+        83
+      ],
+      "type": "major",
+      "longName": "Amaj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "G",
+        "B",
+        "D"
+      ],
+      "name": "A-11",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        79,
+        83,
+        86
+      ],
+      "type": "major",
+      "longName": "Amaj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "G",
+        "B",
+        "D",
+        "F#"
+      ],
+      "name": "A-13",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        79,
+        83,
+        86,
+        90
+      ],
+      "type": "major",
+      "longName": "Amaj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "F#",
+        "B"
+      ],
+      "name": "A-69",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        78,
+        83
+      ],
+      "type": "major",
+      "longName": "Amaj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E"
+      ],
+      "name": "A-major",
+      "midiKeys": [
+        69,
+        73,
+        76
+      ],
+      "type": "major",
+      "longName": "Amajor"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "E"
+      ],
+      "name": "A-m",
+      "midiKeys": [
+        69,
+        72,
+        76
+      ],
+      "type": "minor",
+      "longName": "Am"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "D#"
+      ],
+      "name": "A-dim",
+      "midiKeys": [
+        69,
+        72,
+        75
+      ],
+      "type": "minor",
+      "longName": "Amajdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "D#",
+        "F#"
+      ],
+      "name": "A-dim7",
+      "midiKeys": [
+        69,
+        72,
+        75,
+        78
+      ],
+      "type": "minor",
+      "longName": "Amajdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "A",
+        "B",
+        "E"
+      ],
+      "name": "A-sus2",
+      "midiKeys": [
+        69,
+        71,
+        76
+      ],
+      "type": "major",
+      "longName": "Amajsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "A",
+        "D",
+        "E"
+      ],
+      "name": "A-sus4",
+      "midiKeys": [
+        69,
+        74,
+        76
+      ],
+      "type": "major",
+      "longName": "Amajsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "A",
+        "D",
+        "E",
+        "G"
+      ],
+      "name": "A-7sus4",
+      "midiKeys": [
+        69,
+        74,
+        76,
+        79
+      ],
+      "type": "major",
+      "longName": "Amaj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "F"
+      ],
+      "name": "A-aug",
+      "midiKeys": [
+        69,
+        73,
+        77
+      ],
+      "type": "major",
+      "longName": "Amajaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "F",
+        "G"
+      ],
+      "name": "A-aug7",
+      "midiKeys": [
+        69,
+        73,
+        77,
+        79
+      ],
+      "type": "major",
+      "longName": "Amajaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "F",
+        "G",
+        "B"
+      ],
+      "name": "A-aug9",
+      "midiKeys": [
+        69,
+        73,
+        77,
+        79,
+        83
+      ],
+      "type": "major",
+      "longName": "Amajaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "D#",
+        "G"
+      ],
+      "name": "A-7b5",
+      "midiKeys": [
+        69,
+        73,
+        75,
+        79
+      ],
+      "type": "major",
+      "longName": "Amaj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "G",
+        "A#"
+      ],
+      "name": "A-7b9",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        79,
+        82
+      ],
+      "type": "major",
+      "longName": "Amaj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "G",
+        "C"
+      ],
+      "name": "A-7#9",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        79,
+        84
+      ],
+      "type": "major",
+      "longName": "Amaj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "D#",
+        "G",
+        "A#"
+      ],
+      "name": "A-7b5b9",
+      "midiKeys": [
+        69,
+        73,
+        75,
+        79,
+        82
+      ],
+      "type": "major",
+      "longName": "Amaj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "F",
+        "G",
+        "A#"
+      ],
+      "name": "A-7#5b9",
+      "midiKeys": [
+        69,
+        73,
+        77,
+        79,
+        82
+      ],
+      "type": "major",
+      "longName": "Amaj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "D#",
+        "G",
+        "C"
+      ],
+      "name": "A-7b5#9",
+      "midiKeys": [
+        69,
+        73,
+        75,
+        79,
+        84
+      ],
+      "type": "major",
+      "longName": "Amaj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "F",
+        "G",
+        "C"
+      ],
+      "name": "A-7#5#9",
+      "midiKeys": [
+        69,
+        73,
+        77,
+        79,
+        84
+      ],
+      "type": "major",
+      "longName": "Amaj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "D#",
+        "G",
+        "B"
+      ],
+      "name": "A-9b5",
+      "midiKeys": [
+        69,
+        73,
+        75,
+        79,
+        83
+      ],
+      "type": "major",
+      "longName": "Amaj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "G",
+        "B",
+        "D#"
+      ],
+      "name": "A-9#11",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        79,
+        83,
+        87
+      ],
+      "type": "major",
+      "longName": "Amaj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "B"
+      ],
+      "name": "A-add9",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        83
+      ],
+      "type": "major",
+      "longName": "Amajadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "G#"
+      ],
+      "name": "A-maj7",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        80
+      ],
+      "type": "major",
+      "longName": "Amaj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "D#",
+        "G#"
+      ],
+      "name": "A-maj7b5",
+      "midiKeys": [
+        69,
+        73,
+        75,
+        80
+      ],
+      "type": "major",
+      "longName": "Amaj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "F",
+        "G#"
+      ],
+      "name": "A-maj7#5",
+      "midiKeys": [
+        69,
+        73,
+        77,
+        80
+      ],
+      "type": "major",
+      "longName": "Amaj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "G#",
+        "B"
+      ],
+      "name": "A-maj9",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        80,
+        83
+      ],
+      "type": "major",
+      "longName": "Amaj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "A",
+        "E",
+        "G#",
+        "B",
+        "D"
+      ],
+      "name": "A-maj11",
+      "midiKeys": [
+        69,
+        76,
+        80,
+        83,
+        86
+      ],
+      "type": "major",
+      "longName": "Amaj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "A",
+        "C#",
+        "E",
+        "G#",
+        "B",
+        "F#"
+      ],
+      "name": "A-maj13",
+      "midiKeys": [
+        69,
+        73,
+        76,
+        80,
+        83,
+        90
+      ],
+      "type": "major",
+      "longName": "Amaj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "E",
+        "F#"
+      ],
+      "name": "A-m6",
+      "midiKeys": [
+        69,
+        72,
+        76,
+        78
+      ],
+      "type": "minor",
+      "longName": "Am6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "E",
+        "F#",
+        "B"
+      ],
+      "name": "A-m69",
+      "midiKeys": [
+        69,
+        72,
+        76,
+        78,
+        83
+      ],
+      "type": "minor",
+      "longName": "Am69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "E",
+        "G"
+      ],
+      "name": "A-m7",
+      "midiKeys": [
+        69,
+        72,
+        76,
+        79
+      ],
+      "type": "minor",
+      "longName": "Am7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "D#",
+        "G"
+      ],
+      "name": "A-m7b5",
+      "midiKeys": [
+        69,
+        72,
+        75,
+        79
+      ],
+      "type": "minor",
+      "longName": "Am7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "E",
+        "G",
+        "B"
+      ],
+      "name": "A-m9",
+      "midiKeys": [
+        69,
+        72,
+        76,
+        79,
+        83
+      ],
+      "type": "minor",
+      "longName": "Am9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "E",
+        "G",
+        "B",
+        "D"
+      ],
+      "name": "A-m11",
+      "midiKeys": [
+        69,
+        72,
+        76,
+        79,
+        83,
+        86
+      ],
+      "type": "minor",
+      "longName": "Am11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "E",
+        "G#"
+      ],
+      "name": "A-mmaj7",
+      "midiKeys": [
+        69,
+        72,
+        76,
+        80
+      ],
+      "type": "minor",
+      "longName": "Ammaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "D#",
+        "G#"
+      ],
+      "name": "A-mmaj7b5",
+      "midiKeys": [
+        69,
+        72,
+        75,
+        80
+      ],
+      "type": "minor",
+      "longName": "Ammaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "E",
+        "G#",
+        "B"
+      ],
+      "name": "A-mmaj9",
+      "midiKeys": [
+        69,
+        72,
+        76,
+        80,
+        83
+      ],
+      "type": "minor",
+      "longName": "Ammaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "E",
+        "G#",
+        "B",
+        "D"
+      ],
+      "name": "A-mmaj11",
+      "midiKeys": [
+        69,
+        72,
+        76,
+        80,
+        83,
+        86
+      ],
+      "type": "minor",
+      "longName": "Ammaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "A",
+        "C",
+        "E",
+        "B"
+      ],
+      "name": "A-madd9",
+      "midiKeys": [
+        69,
+        72,
+        76,
+        83
+      ],
+      "type": "minor",
+      "longName": "Amadd9"
+    }
+  },
+  "A#": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "A#",
+        "F"
+      ],
+      "name": "A#-5",
+      "midiKeys": [
+        70,
+        77
+      ],
+      "type": "major",
+      "longName": "A#maj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "G"
+      ],
+      "name": "A#-6",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        79
+      ],
+      "type": "major",
+      "longName": "A#maj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "G#"
+      ],
+      "name": "A#-7",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        80
+      ],
+      "type": "major",
+      "longName": "A#maj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "G#",
+        "C"
+      ],
+      "name": "A#-9",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        80,
+        84
+      ],
+      "type": "major",
+      "longName": "A#maj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "G#",
+        "C",
+        "D#"
+      ],
+      "name": "A#-11",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        80,
+        84,
+        87
+      ],
+      "type": "major",
+      "longName": "A#maj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "G#",
+        "C",
+        "D#",
+        "G"
+      ],
+      "name": "A#-13",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        80,
+        84,
+        87,
+        91
+      ],
+      "type": "major",
+      "longName": "A#maj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "G",
+        "C"
+      ],
+      "name": "A#-69",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        79,
+        84
+      ],
+      "type": "major",
+      "longName": "A#maj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F"
+      ],
+      "name": "A#-major",
+      "midiKeys": [
+        70,
+        74,
+        77
+      ],
+      "type": "major",
+      "longName": "A#major"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "F"
+      ],
+      "name": "A#-m",
+      "midiKeys": [
+        70,
+        73,
+        77
+      ],
+      "type": "minor",
+      "longName": "A#m"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "E"
+      ],
+      "name": "A#-dim",
+      "midiKeys": [
+        70,
+        73,
+        76
+      ],
+      "type": "minor",
+      "longName": "A#majdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "E",
+        "G"
+      ],
+      "name": "A#-dim7",
+      "midiKeys": [
+        70,
+        73,
+        76,
+        79
+      ],
+      "type": "minor",
+      "longName": "A#majdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "A#",
+        "C",
+        "F"
+      ],
+      "name": "A#-sus2",
+      "midiKeys": [
+        70,
+        72,
+        77
+      ],
+      "type": "major",
+      "longName": "A#majsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "A#",
+        "D#",
+        "F"
+      ],
+      "name": "A#-sus4",
+      "midiKeys": [
+        70,
+        75,
+        77
+      ],
+      "type": "major",
+      "longName": "A#majsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "A#",
+        "D#",
+        "F",
+        "G#"
+      ],
+      "name": "A#-7sus4",
+      "midiKeys": [
+        70,
+        75,
+        77,
+        80
+      ],
+      "type": "major",
+      "longName": "A#maj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F#"
+      ],
+      "name": "A#-aug",
+      "midiKeys": [
+        70,
+        74,
+        78
+      ],
+      "type": "major",
+      "longName": "A#majaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F#",
+        "G#"
+      ],
+      "name": "A#-aug7",
+      "midiKeys": [
+        70,
+        74,
+        78,
+        80
+      ],
+      "type": "major",
+      "longName": "A#majaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F#",
+        "G#",
+        "C"
+      ],
+      "name": "A#-aug9",
+      "midiKeys": [
+        70,
+        74,
+        78,
+        80,
+        84
+      ],
+      "type": "major",
+      "longName": "A#majaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "E",
+        "G#"
+      ],
+      "name": "A#-7b5",
+      "midiKeys": [
+        70,
+        74,
+        76,
+        80
+      ],
+      "type": "major",
+      "longName": "A#maj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "G#",
+        "B"
+      ],
+      "name": "A#-7b9",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        80,
+        83
+      ],
+      "type": "major",
+      "longName": "A#maj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "G#",
+        "C#"
+      ],
+      "name": "A#-7#9",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        80,
+        85
+      ],
+      "type": "major",
+      "longName": "A#maj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "E",
+        "G#",
+        "B"
+      ],
+      "name": "A#-7b5b9",
+      "midiKeys": [
+        70,
+        74,
+        76,
+        80,
+        83
+      ],
+      "type": "major",
+      "longName": "A#maj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F#",
+        "G#",
+        "B"
+      ],
+      "name": "A#-7#5b9",
+      "midiKeys": [
+        70,
+        74,
+        78,
+        80,
+        83
+      ],
+      "type": "major",
+      "longName": "A#maj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "E",
+        "G#",
+        "C#"
+      ],
+      "name": "A#-7b5#9",
+      "midiKeys": [
+        70,
+        74,
+        76,
+        80,
+        85
+      ],
+      "type": "major",
+      "longName": "A#maj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F#",
+        "G#",
+        "C#"
+      ],
+      "name": "A#-7#5#9",
+      "midiKeys": [
+        70,
+        74,
+        78,
+        80,
+        85
+      ],
+      "type": "major",
+      "longName": "A#maj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "E",
+        "G#",
+        "C"
+      ],
+      "name": "A#-9b5",
+      "midiKeys": [
+        70,
+        74,
+        76,
+        80,
+        84
+      ],
+      "type": "major",
+      "longName": "A#maj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "G#",
+        "C",
+        "E"
+      ],
+      "name": "A#-9#11",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        80,
+        84,
+        88
+      ],
+      "type": "major",
+      "longName": "A#maj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "C"
+      ],
+      "name": "A#-add9",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        84
+      ],
+      "type": "major",
+      "longName": "A#majadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "A"
+      ],
+      "name": "A#-maj7",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        81
+      ],
+      "type": "major",
+      "longName": "A#maj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "E",
+        "A"
+      ],
+      "name": "A#-maj7b5",
+      "midiKeys": [
+        70,
+        74,
+        76,
+        81
+      ],
+      "type": "major",
+      "longName": "A#maj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F#",
+        "A"
+      ],
+      "name": "A#-maj7#5",
+      "midiKeys": [
+        70,
+        74,
+        78,
+        81
+      ],
+      "type": "major",
+      "longName": "A#maj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "A",
+        "C"
+      ],
+      "name": "A#-maj9",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        81,
+        84
+      ],
+      "type": "major",
+      "longName": "A#maj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "A#",
+        "F",
+        "A",
+        "C",
+        "D#"
+      ],
+      "name": "A#-maj11",
+      "midiKeys": [
+        70,
+        77,
+        81,
+        84,
+        87
+      ],
+      "type": "major",
+      "longName": "A#maj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "A#",
+        "D",
+        "F",
+        "A",
+        "C",
+        "G"
+      ],
+      "name": "A#-maj13",
+      "midiKeys": [
+        70,
+        74,
+        77,
+        81,
+        84,
+        91
+      ],
+      "type": "major",
+      "longName": "A#maj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "F",
+        "G"
+      ],
+      "name": "A#-m6",
+      "midiKeys": [
+        70,
+        73,
+        77,
+        79
+      ],
+      "type": "minor",
+      "longName": "A#m6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "F",
+        "G",
+        "C"
+      ],
+      "name": "A#-m69",
+      "midiKeys": [
+        70,
+        73,
+        77,
+        79,
+        84
+      ],
+      "type": "minor",
+      "longName": "A#m69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "F",
+        "G#"
+      ],
+      "name": "A#-m7",
+      "midiKeys": [
+        70,
+        73,
+        77,
+        80
+      ],
+      "type": "minor",
+      "longName": "A#m7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "E",
+        "G#"
+      ],
+      "name": "A#-m7b5",
+      "midiKeys": [
+        70,
+        73,
+        76,
+        80
+      ],
+      "type": "minor",
+      "longName": "A#m7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "F",
+        "G#",
+        "C"
+      ],
+      "name": "A#-m9",
+      "midiKeys": [
+        70,
+        73,
+        77,
+        80,
+        84
+      ],
+      "type": "minor",
+      "longName": "A#m9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "F",
+        "G#",
+        "C",
+        "D#"
+      ],
+      "name": "A#-m11",
+      "midiKeys": [
+        70,
+        73,
+        77,
+        80,
+        84,
+        87
+      ],
+      "type": "minor",
+      "longName": "A#m11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "F",
+        "A"
+      ],
+      "name": "A#-mmaj7",
+      "midiKeys": [
+        70,
+        73,
+        77,
+        81
+      ],
+      "type": "minor",
+      "longName": "A#mmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "E",
+        "A"
+      ],
+      "name": "A#-mmaj7b5",
+      "midiKeys": [
+        70,
+        73,
+        76,
+        81
+      ],
+      "type": "minor",
+      "longName": "A#mmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "F",
+        "A",
+        "C"
+      ],
+      "name": "A#-mmaj9",
+      "midiKeys": [
+        70,
+        73,
+        77,
+        81,
+        84
+      ],
+      "type": "minor",
+      "longName": "A#mmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "F",
+        "A",
+        "C",
+        "D#"
+      ],
+      "name": "A#-mmaj11",
+      "midiKeys": [
+        70,
+        73,
+        77,
+        81,
+        84,
+        87
+      ],
+      "type": "minor",
+      "longName": "A#mmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "A#",
+        "C#",
+        "F",
+        "C"
+      ],
+      "name": "A#-madd9",
+      "midiKeys": [
+        70,
+        73,
+        77,
+        84
+      ],
+      "type": "minor",
+      "longName": "A#madd9"
+    }
+  },
+  "B": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "B",
+        "F#"
+      ],
+      "name": "B-5",
+      "midiKeys": [
+        71,
+        78
+      ],
+      "type": "major",
+      "longName": "Bmaj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "G#"
+      ],
+      "name": "B-6",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        80
+      ],
+      "type": "major",
+      "longName": "Bmaj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "A"
+      ],
+      "name": "B-7",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        81
+      ],
+      "type": "major",
+      "longName": "Bmaj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "A",
+        "C#"
+      ],
+      "name": "B-9",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        81,
+        85
+      ],
+      "type": "major",
+      "longName": "Bmaj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "A",
+        "C#",
+        "E"
+      ],
+      "name": "B-11",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        81,
+        85,
+        88
+      ],
+      "type": "major",
+      "longName": "Bmaj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "A",
+        "C#",
+        "E",
+        "G#"
+      ],
+      "name": "B-13",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        81,
+        85,
+        88,
+        92
+      ],
+      "type": "major",
+      "longName": "Bmaj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "G#",
+        "C#"
+      ],
+      "name": "B-69",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        80,
+        85
+      ],
+      "type": "major",
+      "longName": "Bmaj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#"
+      ],
+      "name": "B-major",
+      "midiKeys": [
+        71,
+        75,
+        78
+      ],
+      "type": "major",
+      "longName": "Bmajor"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F#"
+      ],
+      "name": "B-m",
+      "midiKeys": [
+        71,
+        74,
+        78
+      ],
+      "type": "minor",
+      "longName": "Bm"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F"
+      ],
+      "name": "B-dim",
+      "midiKeys": [
+        71,
+        74,
+        77
+      ],
+      "type": "minor",
+      "longName": "Bmajdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F",
+        "G#"
+      ],
+      "name": "B-dim7",
+      "midiKeys": [
+        71,
+        74,
+        77,
+        80
+      ],
+      "type": "minor",
+      "longName": "Bmajdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "B",
+        "C#",
+        "F#"
+      ],
+      "name": "B-sus2",
+      "midiKeys": [
+        71,
+        73,
+        78
+      ],
+      "type": "major",
+      "longName": "Bmajsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "B",
+        "E",
+        "F#"
+      ],
+      "name": "B-sus4",
+      "midiKeys": [
+        71,
+        76,
+        78
+      ],
+      "type": "major",
+      "longName": "Bmajsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "B",
+        "E",
+        "F#",
+        "A"
+      ],
+      "name": "B-7sus4",
+      "midiKeys": [
+        71,
+        76,
+        78,
+        81
+      ],
+      "type": "major",
+      "longName": "Bmaj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "G"
+      ],
+      "name": "B-aug",
+      "midiKeys": [
+        71,
+        75,
+        79
+      ],
+      "type": "major",
+      "longName": "Bmajaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "G",
+        "A"
+      ],
+      "name": "B-aug7",
+      "midiKeys": [
+        71,
+        75,
+        79,
+        81
+      ],
+      "type": "major",
+      "longName": "Bmajaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "G",
+        "A",
+        "C#"
+      ],
+      "name": "B-aug9",
+      "midiKeys": [
+        71,
+        75,
+        79,
+        81,
+        85
+      ],
+      "type": "major",
+      "longName": "Bmajaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F",
+        "A"
+      ],
+      "name": "B-7b5",
+      "midiKeys": [
+        71,
+        75,
+        77,
+        81
+      ],
+      "type": "major",
+      "longName": "Bmaj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "A",
+        "C"
+      ],
+      "name": "B-7b9",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        81,
+        84
+      ],
+      "type": "major",
+      "longName": "Bmaj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "A",
+        "D"
+      ],
+      "name": "B-7#9",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        81,
+        86
+      ],
+      "type": "major",
+      "longName": "Bmaj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F",
+        "A",
+        "C"
+      ],
+      "name": "B-7b5b9",
+      "midiKeys": [
+        71,
+        75,
+        77,
+        81,
+        84
+      ],
+      "type": "major",
+      "longName": "Bmaj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "G",
+        "A",
+        "C"
+      ],
+      "name": "B-7#5b9",
+      "midiKeys": [
+        71,
+        75,
+        79,
+        81,
+        84
+      ],
+      "type": "major",
+      "longName": "Bmaj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F",
+        "A",
+        "D"
+      ],
+      "name": "B-7b5#9",
+      "midiKeys": [
+        71,
+        75,
+        77,
+        81,
+        86
+      ],
+      "type": "major",
+      "longName": "Bmaj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "G",
+        "A",
+        "D"
+      ],
+      "name": "B-7#5#9",
+      "midiKeys": [
+        71,
+        75,
+        79,
+        81,
+        86
+      ],
+      "type": "major",
+      "longName": "Bmaj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F",
+        "A",
+        "C#"
+      ],
+      "name": "B-9b5",
+      "midiKeys": [
+        71,
+        75,
+        77,
+        81,
+        85
+      ],
+      "type": "major",
+      "longName": "Bmaj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "A",
+        "C#",
+        "F"
+      ],
+      "name": "B-9#11",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        81,
+        85,
+        89
+      ],
+      "type": "major",
+      "longName": "Bmaj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "C#"
+      ],
+      "name": "B-add9",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        85
+      ],
+      "type": "major",
+      "longName": "Bmajadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "A#"
+      ],
+      "name": "B-maj7",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        82
+      ],
+      "type": "major",
+      "longName": "Bmaj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F",
+        "A#"
+      ],
+      "name": "B-maj7b5",
+      "midiKeys": [
+        71,
+        75,
+        77,
+        82
+      ],
+      "type": "major",
+      "longName": "Bmaj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "G",
+        "A#"
+      ],
+      "name": "B-maj7#5",
+      "midiKeys": [
+        71,
+        75,
+        79,
+        82
+      ],
+      "type": "major",
+      "longName": "Bmaj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "A#",
+        "C#"
+      ],
+      "name": "B-maj9",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        82,
+        85
+      ],
+      "type": "major",
+      "longName": "Bmaj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "B",
+        "F#",
+        "A#",
+        "C#",
+        "E"
+      ],
+      "name": "B-maj11",
+      "midiKeys": [
+        71,
+        78,
+        82,
+        85,
+        88
+      ],
+      "type": "major",
+      "longName": "Bmaj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "B",
+        "D#",
+        "F#",
+        "A#",
+        "C#",
+        "G#"
+      ],
+      "name": "B-maj13",
+      "midiKeys": [
+        71,
+        75,
+        78,
+        82,
+        85,
+        92
+      ],
+      "type": "major",
+      "longName": "Bmaj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F#",
+        "G#"
+      ],
+      "name": "B-m6",
+      "midiKeys": [
+        71,
+        74,
+        78,
+        80
+      ],
+      "type": "minor",
+      "longName": "Bm6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F#",
+        "G#",
+        "C#"
+      ],
+      "name": "B-m69",
+      "midiKeys": [
+        71,
+        74,
+        78,
+        80,
+        85
+      ],
+      "type": "minor",
+      "longName": "Bm69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F#",
+        "A"
+      ],
+      "name": "B-m7",
+      "midiKeys": [
+        71,
+        74,
+        78,
+        81
+      ],
+      "type": "minor",
+      "longName": "Bm7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F",
+        "A"
+      ],
+      "name": "B-m7b5",
+      "midiKeys": [
+        71,
+        74,
+        77,
+        81
+      ],
+      "type": "minor",
+      "longName": "Bm7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F#",
+        "A",
+        "C#"
+      ],
+      "name": "B-m9",
+      "midiKeys": [
+        71,
+        74,
+        78,
+        81,
+        85
+      ],
+      "type": "minor",
+      "longName": "Bm9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F#",
+        "A",
+        "C#",
+        "E"
+      ],
+      "name": "B-m11",
+      "midiKeys": [
+        71,
+        74,
+        78,
+        81,
+        85,
+        88
+      ],
+      "type": "minor",
+      "longName": "Bm11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F#",
+        "A#"
+      ],
+      "name": "B-mmaj7",
+      "midiKeys": [
+        71,
+        74,
+        78,
+        82
+      ],
+      "type": "minor",
+      "longName": "Bmmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F",
+        "A#"
+      ],
+      "name": "B-mmaj7b5",
+      "midiKeys": [
+        71,
+        74,
+        77,
+        82
+      ],
+      "type": "minor",
+      "longName": "Bmmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F#",
+        "A#",
+        "C#"
+      ],
+      "name": "B-mmaj9",
+      "midiKeys": [
+        71,
+        74,
+        78,
+        82,
+        85
+      ],
+      "type": "minor",
+      "longName": "Bmmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F#",
+        "A#",
+        "C#",
+        "E"
+      ],
+      "name": "B-mmaj11",
+      "midiKeys": [
+        71,
+        74,
+        78,
+        82,
+        85,
+        88
+      ],
+      "type": "minor",
+      "longName": "Bmmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "B",
+        "D",
+        "F#",
+        "C#"
+      ],
+      "name": "B-madd9",
+      "midiKeys": [
+        71,
+        74,
+        78,
+        85
+      ],
+      "type": "minor",
+      "longName": "Bmadd9"
+    }
+  },
+  "C": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "C",
+        "G"
+      ],
+      "name": "C-5",
+      "midiKeys": [
+        60,
+        67
+      ],
+      "type": "major",
+      "longName": "Cmaj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "A"
+      ],
+      "name": "C-6",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        69
+      ],
+      "type": "major",
+      "longName": "Cmaj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "Bb"
+      ],
+      "name": "C-7",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        70
+      ],
+      "type": "major",
+      "longName": "Cmaj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "Bb",
+        "D"
+      ],
+      "name": "C-9",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        70,
+        74
+      ],
+      "type": "major",
+      "longName": "Cmaj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "Bb",
+        "D",
+        "F"
+      ],
+      "name": "C-11",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        70,
+        74,
+        77
+      ],
+      "type": "major",
+      "longName": "Cmaj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "Bb",
+        "D",
+        "F",
+        "A"
+      ],
+      "name": "C-13",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        70,
+        74,
+        77,
+        81
+      ],
+      "type": "major",
+      "longName": "Cmaj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "A",
+        "D"
+      ],
+      "name": "C-69",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        69,
+        74
+      ],
+      "type": "major",
+      "longName": "Cmaj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G"
+      ],
+      "name": "C-major",
+      "midiKeys": [
+        60,
+        64,
+        67
+      ],
+      "type": "major",
+      "longName": "Cmajor"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "G"
+      ],
+      "name": "C-m",
+      "midiKeys": [
+        60,
+        63,
+        67
+      ],
+      "type": "minor",
+      "longName": "Cm"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "Gb"
+      ],
+      "name": "C-dim",
+      "midiKeys": [
+        60,
+        63,
+        66
+      ],
+      "type": "minor",
+      "longName": "Cmajdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "Gb",
+        "A"
+      ],
+      "name": "C-dim7",
+      "midiKeys": [
+        60,
+        63,
+        66,
+        69
+      ],
+      "type": "minor",
+      "longName": "Cmajdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "C",
+        "D",
+        "G"
+      ],
+      "name": "C-sus2",
+      "midiKeys": [
+        60,
+        62,
+        67
+      ],
+      "type": "major",
+      "longName": "Cmajsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "C",
+        "F",
+        "G"
+      ],
+      "name": "C-sus4",
+      "midiKeys": [
+        60,
+        65,
+        67
+      ],
+      "type": "major",
+      "longName": "Cmajsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "C",
+        "F",
+        "G",
+        "Bb"
+      ],
+      "name": "C-7sus4",
+      "midiKeys": [
+        60,
+        65,
+        67,
+        70
+      ],
+      "type": "major",
+      "longName": "Cmaj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Ab"
+      ],
+      "name": "C-aug",
+      "midiKeys": [
+        60,
+        64,
+        68
+      ],
+      "type": "major",
+      "longName": "Cmajaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Ab",
+        "Bb"
+      ],
+      "name": "C-aug7",
+      "midiKeys": [
+        60,
+        64,
+        68,
+        70
+      ],
+      "type": "major",
+      "longName": "Cmajaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Ab",
+        "Bb",
+        "D"
+      ],
+      "name": "C-aug9",
+      "midiKeys": [
+        60,
+        64,
+        68,
+        70,
+        74
+      ],
+      "type": "major",
+      "longName": "Cmajaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Gb",
+        "Bb"
+      ],
+      "name": "C-7b5",
+      "midiKeys": [
+        60,
+        64,
+        66,
+        70
+      ],
+      "type": "major",
+      "longName": "Cmaj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "Bb",
+        "Db"
+      ],
+      "name": "C-7b9",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        70,
+        73
+      ],
+      "type": "major",
+      "longName": "Cmaj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "Bb",
+        "Eb"
+      ],
+      "name": "C-7#9",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        70,
+        75
+      ],
+      "type": "major",
+      "longName": "Cmaj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Gb",
+        "Bb",
+        "Db"
+      ],
+      "name": "C-7b5b9",
+      "midiKeys": [
+        60,
+        64,
+        66,
+        70,
+        73
+      ],
+      "type": "major",
+      "longName": "Cmaj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Ab",
+        "Bb",
+        "Db"
+      ],
+      "name": "C-7#5b9",
+      "midiKeys": [
+        60,
+        64,
+        68,
+        70,
+        73
+      ],
+      "type": "major",
+      "longName": "Cmaj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Gb",
+        "Bb",
+        "Eb"
+      ],
+      "name": "C-7b5#9",
+      "midiKeys": [
+        60,
+        64,
+        66,
+        70,
+        75
+      ],
+      "type": "major",
+      "longName": "Cmaj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Ab",
+        "Bb",
+        "Eb"
+      ],
+      "name": "C-7#5#9",
+      "midiKeys": [
+        60,
+        64,
+        68,
+        70,
+        75
+      ],
+      "type": "major",
+      "longName": "Cmaj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Gb",
+        "Bb",
+        "D"
+      ],
+      "name": "C-9b5",
+      "midiKeys": [
+        60,
+        64,
+        66,
+        70,
+        74
+      ],
+      "type": "major",
+      "longName": "Cmaj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "Bb",
+        "D",
+        "Gb"
+      ],
+      "name": "C-9#11",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        70,
+        74,
+        78
+      ],
+      "type": "major",
+      "longName": "Cmaj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "D"
+      ],
+      "name": "C-add9",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        74
+      ],
+      "type": "major",
+      "longName": "Cmajadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "B"
+      ],
+      "name": "C-maj7",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        71
+      ],
+      "type": "major",
+      "longName": "Cmaj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Gb",
+        "B"
+      ],
+      "name": "C-maj7b5",
+      "midiKeys": [
+        60,
+        64,
+        66,
+        71
+      ],
+      "type": "major",
+      "longName": "Cmaj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "Ab",
+        "B"
+      ],
+      "name": "C-maj7#5",
+      "midiKeys": [
+        60,
+        64,
+        68,
+        71
+      ],
+      "type": "major",
+      "longName": "Cmaj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "B",
+        "D"
+      ],
+      "name": "C-maj9",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        71,
+        74
+      ],
+      "type": "major",
+      "longName": "Cmaj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "C",
+        "G",
+        "B",
+        "D",
+        "F"
+      ],
+      "name": "C-maj11",
+      "midiKeys": [
+        60,
+        67,
+        71,
+        74,
+        77
+      ],
+      "type": "major",
+      "longName": "Cmaj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "C",
+        "E",
+        "G",
+        "B",
+        "D",
+        "A"
+      ],
+      "name": "C-maj13",
+      "midiKeys": [
+        60,
+        64,
+        67,
+        71,
+        74,
+        81
+      ],
+      "type": "major",
+      "longName": "Cmaj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "G",
+        "A"
+      ],
+      "name": "C-m6",
+      "midiKeys": [
+        60,
+        63,
+        67,
+        69
+      ],
+      "type": "minor",
+      "longName": "Cm6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "G",
+        "A",
+        "D"
+      ],
+      "name": "C-m69",
+      "midiKeys": [
+        60,
+        63,
+        67,
+        69,
+        74
+      ],
+      "type": "minor",
+      "longName": "Cm69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "G",
+        "Bb"
+      ],
+      "name": "C-m7",
+      "midiKeys": [
+        60,
+        63,
+        67,
+        70
+      ],
+      "type": "minor",
+      "longName": "Cm7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "Gb",
+        "Bb"
+      ],
+      "name": "C-m7b5",
+      "midiKeys": [
+        60,
+        63,
+        66,
+        70
+      ],
+      "type": "minor",
+      "longName": "Cm7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "G",
+        "Bb",
+        "D"
+      ],
+      "name": "C-m9",
+      "midiKeys": [
+        60,
+        63,
+        67,
+        70,
+        74
+      ],
+      "type": "minor",
+      "longName": "Cm9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "G",
+        "Bb",
+        "D",
+        "F"
+      ],
+      "name": "C-m11",
+      "midiKeys": [
+        60,
+        63,
+        67,
+        70,
+        74,
+        77
+      ],
+      "type": "minor",
+      "longName": "Cm11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "G",
+        "B"
+      ],
+      "name": "C-mmaj7",
+      "midiKeys": [
+        60,
+        63,
+        67,
+        71
+      ],
+      "type": "minor",
+      "longName": "Cmmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "Gb",
+        "B"
+      ],
+      "name": "C-mmaj7b5",
+      "midiKeys": [
+        60,
+        63,
+        66,
+        71
+      ],
+      "type": "minor",
+      "longName": "Cmmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "G",
+        "B",
+        "D"
+      ],
+      "name": "C-mmaj9",
+      "midiKeys": [
+        60,
+        63,
+        67,
+        71,
+        74
+      ],
+      "type": "minor",
+      "longName": "Cmmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "G",
+        "B",
+        "D",
+        "F"
+      ],
+      "name": "C-mmaj11",
+      "midiKeys": [
+        60,
+        63,
+        67,
+        71,
+        74,
+        77
+      ],
+      "type": "minor",
+      "longName": "Cmmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "C",
+        "Eb",
+        "G",
+        "D"
+      ],
+      "name": "C-madd9",
+      "midiKeys": [
+        60,
+        63,
+        67,
+        74
+      ],
+      "type": "minor",
+      "longName": "Cmadd9"
+    }
+  },
+  "C#": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "C#",
+        "G#"
+      ],
+      "name": "C#-5",
+      "midiKeys": [
+        61,
+        68
+      ],
+      "type": "major",
+      "longName": "C#maj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "A#"
+      ],
+      "name": "C#-6",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        70
+      ],
+      "type": "major",
+      "longName": "C#maj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "B"
+      ],
+      "name": "C#-7",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        71
+      ],
+      "type": "major",
+      "longName": "C#maj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "B",
+        "D#"
+      ],
+      "name": "C#-9",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        71,
+        75
+      ],
+      "type": "major",
+      "longName": "C#maj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "B",
+        "D#",
+        "F#"
+      ],
+      "name": "C#-11",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        71,
+        75,
+        78
+      ],
+      "type": "major",
+      "longName": "C#maj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "B",
+        "D#",
+        "F#",
+        "A#"
+      ],
+      "name": "C#-13",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        71,
+        75,
+        78,
+        82
+      ],
+      "type": "major",
+      "longName": "C#maj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "A#",
+        "D#"
+      ],
+      "name": "C#-69",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        70,
+        75
+      ],
+      "type": "major",
+      "longName": "C#maj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#"
+      ],
+      "name": "C#-major",
+      "midiKeys": [
+        61,
+        65,
+        68
+      ],
+      "type": "major",
+      "longName": "C#major"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G#"
+      ],
+      "name": "C#-m",
+      "midiKeys": [
+        61,
+        64,
+        68
+      ],
+      "type": "minor",
+      "longName": "C#m"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G"
+      ],
+      "name": "C#-dim",
+      "midiKeys": [
+        61,
+        64,
+        67
+      ],
+      "type": "minor",
+      "longName": "C#majdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G",
+        "A#"
+      ],
+      "name": "C#-dim7",
+      "midiKeys": [
+        61,
+        64,
+        67,
+        70
+      ],
+      "type": "minor",
+      "longName": "C#majdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "C#",
+        "D#",
+        "G#"
+      ],
+      "name": "C#-sus2",
+      "midiKeys": [
+        61,
+        63,
+        68
+      ],
+      "type": "major",
+      "longName": "C#majsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "C#",
+        "F#",
+        "G#"
+      ],
+      "name": "C#-sus4",
+      "midiKeys": [
+        61,
+        66,
+        68
+      ],
+      "type": "major",
+      "longName": "C#majsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "C#",
+        "F#",
+        "G#",
+        "B"
+      ],
+      "name": "C#-7sus4",
+      "midiKeys": [
+        61,
+        66,
+        68,
+        71
+      ],
+      "type": "major",
+      "longName": "C#maj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "A"
+      ],
+      "name": "C#-aug",
+      "midiKeys": [
+        61,
+        65,
+        69
+      ],
+      "type": "major",
+      "longName": "C#majaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "A",
+        "B"
+      ],
+      "name": "C#-aug7",
+      "midiKeys": [
+        61,
+        65,
+        69,
+        71
+      ],
+      "type": "major",
+      "longName": "C#majaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "A",
+        "B",
+        "D#"
+      ],
+      "name": "C#-aug9",
+      "midiKeys": [
+        61,
+        65,
+        69,
+        71,
+        75
+      ],
+      "type": "major",
+      "longName": "C#majaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G",
+        "B"
+      ],
+      "name": "C#-7b5",
+      "midiKeys": [
+        61,
+        65,
+        67,
+        71
+      ],
+      "type": "major",
+      "longName": "C#maj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "B",
+        "D"
+      ],
+      "name": "C#-7b9",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        71,
+        74
+      ],
+      "type": "major",
+      "longName": "C#maj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "B",
+        "E"
+      ],
+      "name": "C#-7#9",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        71,
+        76
+      ],
+      "type": "major",
+      "longName": "C#maj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G",
+        "B",
+        "D"
+      ],
+      "name": "C#-7b5b9",
+      "midiKeys": [
+        61,
+        65,
+        67,
+        71,
+        74
+      ],
+      "type": "major",
+      "longName": "C#maj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "A",
+        "B",
+        "D"
+      ],
+      "name": "C#-7#5b9",
+      "midiKeys": [
+        61,
+        65,
+        69,
+        71,
+        74
+      ],
+      "type": "major",
+      "longName": "C#maj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G",
+        "B",
+        "E"
+      ],
+      "name": "C#-7b5#9",
+      "midiKeys": [
+        61,
+        65,
+        67,
+        71,
+        76
+      ],
+      "type": "major",
+      "longName": "C#maj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "A",
+        "B",
+        "E"
+      ],
+      "name": "C#-7#5#9",
+      "midiKeys": [
+        61,
+        65,
+        69,
+        71,
+        76
+      ],
+      "type": "major",
+      "longName": "C#maj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G",
+        "B",
+        "D#"
+      ],
+      "name": "C#-9b5",
+      "midiKeys": [
+        61,
+        65,
+        67,
+        71,
+        75
+      ],
+      "type": "major",
+      "longName": "C#maj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "B",
+        "D#",
+        "G"
+      ],
+      "name": "C#-9#11",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        71,
+        75,
+        79
+      ],
+      "type": "major",
+      "longName": "C#maj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "D#"
+      ],
+      "name": "C#-add9",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        75
+      ],
+      "type": "major",
+      "longName": "C#majadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "C"
+      ],
+      "name": "C#-maj7",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        72
+      ],
+      "type": "major",
+      "longName": "C#maj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G",
+        "C"
+      ],
+      "name": "C#-maj7b5",
+      "midiKeys": [
+        61,
+        65,
+        67,
+        72
+      ],
+      "type": "major",
+      "longName": "C#maj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "A",
+        "C"
+      ],
+      "name": "C#-maj7#5",
+      "midiKeys": [
+        61,
+        65,
+        69,
+        72
+      ],
+      "type": "major",
+      "longName": "C#maj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "C",
+        "D#"
+      ],
+      "name": "C#-maj9",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        72,
+        75
+      ],
+      "type": "major",
+      "longName": "C#maj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "C#",
+        "G#",
+        "C",
+        "D#",
+        "F#"
+      ],
+      "name": "C#-maj11",
+      "midiKeys": [
+        61,
+        68,
+        72,
+        75,
+        78
+      ],
+      "type": "major",
+      "longName": "C#maj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "C#",
+        "F",
+        "G#",
+        "C",
+        "D#",
+        "A#"
+      ],
+      "name": "C#-maj13",
+      "midiKeys": [
+        61,
+        65,
+        68,
+        72,
+        75,
+        82
+      ],
+      "type": "major",
+      "longName": "C#maj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G#",
+        "A#"
+      ],
+      "name": "C#-m6",
+      "midiKeys": [
+        61,
+        64,
+        68,
+        70
+      ],
+      "type": "minor",
+      "longName": "C#m6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G#",
+        "A#",
+        "D#"
+      ],
+      "name": "C#-m69",
+      "midiKeys": [
+        61,
+        64,
+        68,
+        70,
+        75
+      ],
+      "type": "minor",
+      "longName": "C#m69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G#",
+        "B"
+      ],
+      "name": "C#-m7",
+      "midiKeys": [
+        61,
+        64,
+        68,
+        71
+      ],
+      "type": "minor",
+      "longName": "C#m7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G",
+        "B"
+      ],
+      "name": "C#-m7b5",
+      "midiKeys": [
+        61,
+        64,
+        67,
+        71
+      ],
+      "type": "minor",
+      "longName": "C#m7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G#",
+        "B",
+        "D#"
+      ],
+      "name": "C#-m9",
+      "midiKeys": [
+        61,
+        64,
+        68,
+        71,
+        75
+      ],
+      "type": "minor",
+      "longName": "C#m9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G#",
+        "B",
+        "D#",
+        "F#"
+      ],
+      "name": "C#-m11",
+      "midiKeys": [
+        61,
+        64,
+        68,
+        71,
+        75,
+        78
+      ],
+      "type": "minor",
+      "longName": "C#m11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G#",
+        "C"
+      ],
+      "name": "C#-mmaj7",
+      "midiKeys": [
+        61,
+        64,
+        68,
+        72
+      ],
+      "type": "minor",
+      "longName": "C#mmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G",
+        "C"
+      ],
+      "name": "C#-mmaj7b5",
+      "midiKeys": [
+        61,
+        64,
+        67,
+        72
+      ],
+      "type": "minor",
+      "longName": "C#mmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G#",
+        "C",
+        "D#"
+      ],
+      "name": "C#-mmaj9",
+      "midiKeys": [
+        61,
+        64,
+        68,
+        72,
+        75
+      ],
+      "type": "minor",
+      "longName": "C#mmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G#",
+        "C",
+        "D#",
+        "F#"
+      ],
+      "name": "C#-mmaj11",
+      "midiKeys": [
+        61,
+        64,
+        68,
+        72,
+        75,
+        78
+      ],
+      "type": "minor",
+      "longName": "C#mmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "C#",
+        "E",
+        "G#",
+        "D#"
+      ],
+      "name": "C#-madd9",
+      "midiKeys": [
+        61,
+        64,
+        68,
+        75
+      ],
+      "type": "minor",
+      "longName": "C#madd9"
+    }
+  },
+  "D": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "D",
+        "A"
+      ],
+      "name": "D-5",
+      "midiKeys": [
+        62,
+        69
+      ],
+      "type": "major",
+      "longName": "Dmaj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "B"
+      ],
+      "name": "D-6",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        71
+      ],
+      "type": "major",
+      "longName": "Dmaj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C"
+      ],
+      "name": "D-7",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        72
+      ],
+      "type": "major",
+      "longName": "Dmaj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C",
+        "E"
+      ],
+      "name": "D-9",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        72,
+        76
+      ],
+      "type": "major",
+      "longName": "Dmaj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C",
+        "E",
+        "G"
+      ],
+      "name": "D-11",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        72,
+        76,
+        79
+      ],
+      "type": "major",
+      "longName": "Dmaj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C",
+        "E",
+        "G",
+        "B"
+      ],
+      "name": "D-13",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        72,
+        76,
+        79,
+        83
+      ],
+      "type": "major",
+      "longName": "Dmaj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "B",
+        "E"
+      ],
+      "name": "D-69",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        71,
+        76
+      ],
+      "type": "major",
+      "longName": "Dmaj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A"
+      ],
+      "name": "D-major",
+      "midiKeys": [
+        62,
+        66,
+        69
+      ],
+      "type": "major",
+      "longName": "Dmajor"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "A"
+      ],
+      "name": "D-m",
+      "midiKeys": [
+        62,
+        65,
+        69
+      ],
+      "type": "minor",
+      "longName": "Dm"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "G#"
+      ],
+      "name": "D-dim",
+      "midiKeys": [
+        62,
+        65,
+        68
+      ],
+      "type": "minor",
+      "longName": "Dmajdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "G#",
+        "B"
+      ],
+      "name": "D-dim7",
+      "midiKeys": [
+        62,
+        65,
+        68,
+        71
+      ],
+      "type": "minor",
+      "longName": "Dmajdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "D",
+        "E",
+        "A"
+      ],
+      "name": "D-sus2",
+      "midiKeys": [
+        62,
+        64,
+        69
+      ],
+      "type": "major",
+      "longName": "Dmajsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "D",
+        "G",
+        "A"
+      ],
+      "name": "D-sus4",
+      "midiKeys": [
+        62,
+        67,
+        69
+      ],
+      "type": "major",
+      "longName": "Dmajsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "D",
+        "G",
+        "A",
+        "C"
+      ],
+      "name": "D-7sus4",
+      "midiKeys": [
+        62,
+        67,
+        69,
+        72
+      ],
+      "type": "major",
+      "longName": "Dmaj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A#"
+      ],
+      "name": "D-aug",
+      "midiKeys": [
+        62,
+        66,
+        70
+      ],
+      "type": "major",
+      "longName": "Dmajaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A#",
+        "C"
+      ],
+      "name": "D-aug7",
+      "midiKeys": [
+        62,
+        66,
+        70,
+        72
+      ],
+      "type": "major",
+      "longName": "Dmajaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A#",
+        "C",
+        "E"
+      ],
+      "name": "D-aug9",
+      "midiKeys": [
+        62,
+        66,
+        70,
+        72,
+        76
+      ],
+      "type": "major",
+      "longName": "Dmajaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "G#",
+        "C"
+      ],
+      "name": "D-7b5",
+      "midiKeys": [
+        62,
+        66,
+        68,
+        72
+      ],
+      "type": "major",
+      "longName": "Dmaj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C",
+        "D#"
+      ],
+      "name": "D-7b9",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        72,
+        75
+      ],
+      "type": "major",
+      "longName": "Dmaj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C",
+        "F"
+      ],
+      "name": "D-7#9",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        72,
+        77
+      ],
+      "type": "major",
+      "longName": "Dmaj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "G#",
+        "C",
+        "D#"
+      ],
+      "name": "D-7b5b9",
+      "midiKeys": [
+        62,
+        66,
+        68,
+        72,
+        75
+      ],
+      "type": "major",
+      "longName": "Dmaj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A#",
+        "C",
+        "D#"
+      ],
+      "name": "D-7#5b9",
+      "midiKeys": [
+        62,
+        66,
+        70,
+        72,
+        75
+      ],
+      "type": "major",
+      "longName": "Dmaj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "G#",
+        "C",
+        "F"
+      ],
+      "name": "D-7b5#9",
+      "midiKeys": [
+        62,
+        66,
+        68,
+        72,
+        77
+      ],
+      "type": "major",
+      "longName": "Dmaj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A#",
+        "C",
+        "F"
+      ],
+      "name": "D-7#5#9",
+      "midiKeys": [
+        62,
+        66,
+        70,
+        72,
+        77
+      ],
+      "type": "major",
+      "longName": "Dmaj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "G#",
+        "C",
+        "E"
+      ],
+      "name": "D-9b5",
+      "midiKeys": [
+        62,
+        66,
+        68,
+        72,
+        76
+      ],
+      "type": "major",
+      "longName": "Dmaj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C",
+        "E",
+        "G#"
+      ],
+      "name": "D-9#11",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        72,
+        76,
+        80
+      ],
+      "type": "major",
+      "longName": "Dmaj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "E"
+      ],
+      "name": "D-add9",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        76
+      ],
+      "type": "major",
+      "longName": "Dmajadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C#"
+      ],
+      "name": "D-maj7",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        73
+      ],
+      "type": "major",
+      "longName": "Dmaj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "G#",
+        "C#"
+      ],
+      "name": "D-maj7b5",
+      "midiKeys": [
+        62,
+        66,
+        68,
+        73
+      ],
+      "type": "major",
+      "longName": "Dmaj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A#",
+        "C#"
+      ],
+      "name": "D-maj7#5",
+      "midiKeys": [
+        62,
+        66,
+        70,
+        73
+      ],
+      "type": "major",
+      "longName": "Dmaj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C#",
+        "E"
+      ],
+      "name": "D-maj9",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        73,
+        76
+      ],
+      "type": "major",
+      "longName": "Dmaj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "D",
+        "A",
+        "C#",
+        "E",
+        "G"
+      ],
+      "name": "D-maj11",
+      "midiKeys": [
+        62,
+        69,
+        73,
+        76,
+        79
+      ],
+      "type": "major",
+      "longName": "Dmaj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C#",
+        "E",
+        "B"
+      ],
+      "name": "D-maj13",
+      "midiKeys": [
+        62,
+        66,
+        69,
+        73,
+        76,
+        83
+      ],
+      "type": "major",
+      "longName": "Dmaj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "A",
+        "B"
+      ],
+      "name": "D-m6",
+      "midiKeys": [
+        62,
+        65,
+        69,
+        71
+      ],
+      "type": "minor",
+      "longName": "Dm6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "A",
+        "B",
+        "E"
+      ],
+      "name": "D-m69",
+      "midiKeys": [
+        62,
+        65,
+        69,
+        71,
+        76
+      ],
+      "type": "minor",
+      "longName": "Dm69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "A",
+        "C"
+      ],
+      "name": "D-m7",
+      "midiKeys": [
+        62,
+        65,
+        69,
+        72
+      ],
+      "type": "minor",
+      "longName": "Dm7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "Ab",
+        "C"
+      ],
+      "name": "D-m7b5",
+      "midiKeys": [
+        62,
+        65,
+        68,
+        72
+      ],
+      "type": "minor",
+      "longName": "Dm7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "A",
+        "C",
+        "E"
+      ],
+      "name": "D-m9",
+      "midiKeys": [
+        62,
+        65,
+        69,
+        72,
+        76
+      ],
+      "type": "minor",
+      "longName": "Dm9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "A",
+        "C",
+        "E",
+        "G"
+      ],
+      "name": "D-m11",
+      "midiKeys": [
+        62,
+        65,
+        69,
+        72,
+        76,
+        79
+      ],
+      "type": "minor",
+      "longName": "Dm11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "A",
+        "Db"
+      ],
+      "name": "D-mmaj7",
+      "midiKeys": [
+        62,
+        65,
+        69,
+        73
+      ],
+      "type": "minor",
+      "longName": "Dmmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "Ab",
+        "Db"
+      ],
+      "name": "D-mmaj7b5",
+      "midiKeys": [
+        62,
+        65,
+        68,
+        73
+      ],
+      "type": "minor",
+      "longName": "Dmmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "A",
+        "Db",
+        "E"
+      ],
+      "name": "D-mmaj9",
+      "midiKeys": [
+        62,
+        65,
+        69,
+        73,
+        76
+      ],
+      "type": "minor",
+      "longName": "Dmmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "A",
+        "Db",
+        "E",
+        "G"
+      ],
+      "name": "D-mmaj11",
+      "midiKeys": [
+        62,
+        65,
+        69,
+        73,
+        76,
+        79
+      ],
+      "type": "minor",
+      "longName": "Dmmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "D",
+        "F",
+        "A",
+        "E"
+      ],
+      "name": "D-madd9",
+      "midiKeys": [
+        62,
+        65,
+        69,
+        76
+      ],
+      "type": "minor",
+      "longName": "Dmadd9"
+    }
+  },
+  "D#": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "D#",
+        "A#"
+      ],
+      "name": "D#-5",
+      "midiKeys": [
+        63,
+        70
+      ],
+      "type": "major",
+      "longName": "D#maj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "C"
+      ],
+      "name": "D#-6",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        72
+      ],
+      "type": "major",
+      "longName": "D#maj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "C#"
+      ],
+      "name": "D#-7",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        73
+      ],
+      "type": "major",
+      "longName": "D#maj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "C#",
+        "F"
+      ],
+      "name": "D#-9",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        73,
+        77
+      ],
+      "type": "major",
+      "longName": "D#maj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "C#",
+        "F",
+        "G#"
+      ],
+      "name": "D#-11",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        73,
+        77,
+        80
+      ],
+      "type": "major",
+      "longName": "D#maj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "C#",
+        "F",
+        "G#",
+        "C"
+      ],
+      "name": "D#-13",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        73,
+        77,
+        80,
+        84
+      ],
+      "type": "major",
+      "longName": "D#maj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "C",
+        "F"
+      ],
+      "name": "D#-69",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        72,
+        77
+      ],
+      "type": "major",
+      "longName": "D#maj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#"
+      ],
+      "name": "D#-major",
+      "midiKeys": [
+        63,
+        67,
+        70
+      ],
+      "type": "major",
+      "longName": "D#major"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A#"
+      ],
+      "name": "D#-m",
+      "midiKeys": [
+        63,
+        66,
+        70
+      ],
+      "type": "minor",
+      "longName": "D#m"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A"
+      ],
+      "name": "D#-dim",
+      "midiKeys": [
+        63,
+        66,
+        69
+      ],
+      "type": "minor",
+      "longName": "D#majdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A",
+        "C"
+      ],
+      "name": "D#-dim7",
+      "midiKeys": [
+        63,
+        66,
+        69,
+        72
+      ],
+      "type": "minor",
+      "longName": "D#majdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "D#",
+        "F",
+        "A#"
+      ],
+      "name": "D#-sus2",
+      "midiKeys": [
+        63,
+        65,
+        70
+      ],
+      "type": "major",
+      "longName": "D#majsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "D#",
+        "G#",
+        "A#"
+      ],
+      "name": "D#-sus4",
+      "midiKeys": [
+        63,
+        68,
+        70
+      ],
+      "type": "major",
+      "longName": "D#majsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "D#",
+        "G#",
+        "A#",
+        "C#"
+      ],
+      "name": "D#-7sus4",
+      "midiKeys": [
+        63,
+        68,
+        70,
+        73
+      ],
+      "type": "major",
+      "longName": "D#maj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "B"
+      ],
+      "name": "D#-aug",
+      "midiKeys": [
+        63,
+        67,
+        71
+      ],
+      "type": "major",
+      "longName": "D#majaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "B",
+        "C#"
+      ],
+      "name": "D#-aug7",
+      "midiKeys": [
+        63,
+        67,
+        71,
+        73
+      ],
+      "type": "major",
+      "longName": "D#majaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "B",
+        "C#",
+        "F"
+      ],
+      "name": "D#-aug9",
+      "midiKeys": [
+        63,
+        67,
+        71,
+        73,
+        77
+      ],
+      "type": "major",
+      "longName": "D#majaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A",
+        "C#"
+      ],
+      "name": "D#-7b5",
+      "midiKeys": [
+        63,
+        67,
+        69,
+        73
+      ],
+      "type": "major",
+      "longName": "D#maj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "C#",
+        "E"
+      ],
+      "name": "D#-7b9",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        73,
+        76
+      ],
+      "type": "major",
+      "longName": "D#maj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "C#",
+        "F#"
+      ],
+      "name": "D#-7#9",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        73,
+        78
+      ],
+      "type": "major",
+      "longName": "D#maj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A",
+        "C#",
+        "E"
+      ],
+      "name": "D#-7b5b9",
+      "midiKeys": [
+        63,
+        67,
+        69,
+        73,
+        76
+      ],
+      "type": "major",
+      "longName": "D#maj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "B",
+        "C#",
+        "E"
+      ],
+      "name": "D#-7#5b9",
+      "midiKeys": [
+        63,
+        67,
+        71,
+        73,
+        76
+      ],
+      "type": "major",
+      "longName": "D#maj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A",
+        "C#",
+        "F#"
+      ],
+      "name": "D#-7b5#9",
+      "midiKeys": [
+        63,
+        67,
+        69,
+        73,
+        78
+      ],
+      "type": "major",
+      "longName": "D#maj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "B",
+        "C#",
+        "F#"
+      ],
+      "name": "D#-7#5#9",
+      "midiKeys": [
+        63,
+        67,
+        71,
+        73,
+        78
+      ],
+      "type": "major",
+      "longName": "D#maj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A",
+        "C#",
+        "F"
+      ],
+      "name": "D#-9b5",
+      "midiKeys": [
+        63,
+        67,
+        69,
+        73,
+        77
+      ],
+      "type": "major",
+      "longName": "D#maj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "C#",
+        "F",
+        "A"
+      ],
+      "name": "D#-9#11",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        73,
+        77,
+        81
+      ],
+      "type": "major",
+      "longName": "D#maj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "F"
+      ],
+      "name": "D#-add9",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        77
+      ],
+      "type": "major",
+      "longName": "D#majadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "D"
+      ],
+      "name": "D#-maj7",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        74
+      ],
+      "type": "major",
+      "longName": "D#maj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A",
+        "D"
+      ],
+      "name": "D#-maj7b5",
+      "midiKeys": [
+        63,
+        67,
+        69,
+        74
+      ],
+      "type": "major",
+      "longName": "D#maj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "B",
+        "D"
+      ],
+      "name": "D#-maj7#5",
+      "midiKeys": [
+        63,
+        67,
+        71,
+        74
+      ],
+      "type": "major",
+      "longName": "D#maj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "D",
+        "F"
+      ],
+      "name": "D#-maj9",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        74,
+        77
+      ],
+      "type": "major",
+      "longName": "D#maj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "D#",
+        "A#",
+        "D",
+        "F",
+        "G#"
+      ],
+      "name": "D#-maj11",
+      "midiKeys": [
+        63,
+        70,
+        74,
+        77,
+        80
+      ],
+      "type": "major",
+      "longName": "D#maj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "D#",
+        "G",
+        "A#",
+        "D",
+        "F",
+        "C"
+      ],
+      "name": "D#-maj13",
+      "midiKeys": [
+        63,
+        67,
+        70,
+        74,
+        77,
+        84
+      ],
+      "type": "major",
+      "longName": "D#maj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A#",
+        "C"
+      ],
+      "name": "D#-m6",
+      "midiKeys": [
+        63,
+        66,
+        70,
+        72
+      ],
+      "type": "minor",
+      "longName": "D#m6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A#",
+        "C",
+        "F"
+      ],
+      "name": "D#-m69",
+      "midiKeys": [
+        63,
+        66,
+        70,
+        72,
+        77
+      ],
+      "type": "minor",
+      "longName": "D#m69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A#",
+        "C#"
+      ],
+      "name": "D#-m7",
+      "midiKeys": [
+        63,
+        66,
+        70,
+        73
+      ],
+      "type": "minor",
+      "longName": "D#m7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A",
+        "C#"
+      ],
+      "name": "D#-m7b5",
+      "midiKeys": [
+        63,
+        66,
+        69,
+        73
+      ],
+      "type": "minor",
+      "longName": "D#m7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A#",
+        "C#",
+        "F"
+      ],
+      "name": "D#-m9",
+      "midiKeys": [
+        63,
+        66,
+        70,
+        73,
+        77
+      ],
+      "type": "minor",
+      "longName": "D#m9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A#",
+        "C#",
+        "F",
+        "G#"
+      ],
+      "name": "D#-m11",
+      "midiKeys": [
+        63,
+        66,
+        70,
+        73,
+        77,
+        80
+      ],
+      "type": "minor",
+      "longName": "D#m11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A#",
+        "D"
+      ],
+      "name": "D#-mmaj7",
+      "midiKeys": [
+        63,
+        66,
+        70,
+        74
+      ],
+      "type": "minor",
+      "longName": "D#mmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A",
+        "D"
+      ],
+      "name": "D#-mmaj7b5",
+      "midiKeys": [
+        63,
+        66,
+        69,
+        74
+      ],
+      "type": "minor",
+      "longName": "D#mmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A#",
+        "D",
+        "F"
+      ],
+      "name": "D#-mmaj9",
+      "midiKeys": [
+        63,
+        66,
+        70,
+        74,
+        77
+      ],
+      "type": "minor",
+      "longName": "D#mmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A#",
+        "D",
+        "F",
+        "G#"
+      ],
+      "name": "D#-mmaj11",
+      "midiKeys": [
+        63,
+        66,
+        70,
+        74,
+        77,
+        80
+      ],
+      "type": "minor",
+      "longName": "D#mmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "D#",
+        "F#",
+        "A#",
+        "F"
+      ],
+      "name": "D#-madd9",
+      "midiKeys": [
+        63,
+        66,
+        70,
+        77
+      ],
+      "type": "minor",
+      "longName": "D#madd9"
+    }
+  },
+  "E": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "E",
+        "B"
+      ],
+      "name": "E-5",
+      "midiKeys": [
+        64,
+        71
+      ],
+      "type": "major",
+      "longName": "Emaj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "C#"
+      ],
+      "name": "E-6",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        73
+      ],
+      "type": "major",
+      "longName": "Emaj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "D"
+      ],
+      "name": "E-7",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        74
+      ],
+      "type": "major",
+      "longName": "Emaj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "D",
+        "F#"
+      ],
+      "name": "E-9",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        74,
+        78
+      ],
+      "type": "major",
+      "longName": "Emaj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "D",
+        "F#",
+        "A"
+      ],
+      "name": "E-11",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        74,
+        78,
+        81
+      ],
+      "type": "major",
+      "longName": "Emaj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "D",
+        "F#",
+        "A",
+        "C#"
+      ],
+      "name": "E-13",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        74,
+        78,
+        81,
+        85
+      ],
+      "type": "major",
+      "longName": "Emaj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "C#",
+        "F#"
+      ],
+      "name": "E-69",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        73,
+        78
+      ],
+      "type": "major",
+      "longName": "Emaj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B"
+      ],
+      "name": "E-major",
+      "midiKeys": [
+        64,
+        68,
+        71
+      ],
+      "type": "major",
+      "longName": "Emajor"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "B"
+      ],
+      "name": "E-m",
+      "midiKeys": [
+        64,
+        67,
+        71
+      ],
+      "type": "minor",
+      "longName": "Em"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "A#"
+      ],
+      "name": "E-dim",
+      "midiKeys": [
+        64,
+        67,
+        70
+      ],
+      "type": "minor",
+      "longName": "Emajdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "A#",
+        "C#"
+      ],
+      "name": "E-dim7",
+      "midiKeys": [
+        64,
+        67,
+        70,
+        73
+      ],
+      "type": "minor",
+      "longName": "Emajdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "E",
+        "F#",
+        "B"
+      ],
+      "name": "E-sus2",
+      "midiKeys": [
+        64,
+        66,
+        71
+      ],
+      "type": "major",
+      "longName": "Emajsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "E",
+        "A",
+        "B"
+      ],
+      "name": "E-sus4",
+      "midiKeys": [
+        64,
+        69,
+        71
+      ],
+      "type": "major",
+      "longName": "Emajsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "E",
+        "A",
+        "B",
+        "D"
+      ],
+      "name": "E-7sus4",
+      "midiKeys": [
+        64,
+        69,
+        71,
+        74
+      ],
+      "type": "major",
+      "longName": "Emaj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "C"
+      ],
+      "name": "E-aug",
+      "midiKeys": [
+        64,
+        68,
+        72
+      ],
+      "type": "major",
+      "longName": "Emajaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "C",
+        "D"
+      ],
+      "name": "E-aug7",
+      "midiKeys": [
+        64,
+        68,
+        72,
+        74
+      ],
+      "type": "major",
+      "longName": "Emajaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "C",
+        "D",
+        "F#"
+      ],
+      "name": "E-aug9",
+      "midiKeys": [
+        64,
+        68,
+        72,
+        74,
+        78
+      ],
+      "type": "major",
+      "longName": "Emajaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "A#",
+        "D"
+      ],
+      "name": "E-7b5",
+      "midiKeys": [
+        64,
+        68,
+        70,
+        74
+      ],
+      "type": "major",
+      "longName": "Emaj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "D",
+        "F"
+      ],
+      "name": "E-7b9",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        74,
+        77
+      ],
+      "type": "major",
+      "longName": "Emaj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "D",
+        "G"
+      ],
+      "name": "E-7#9",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        74,
+        79
+      ],
+      "type": "major",
+      "longName": "Emaj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "A#",
+        "D",
+        "F"
+      ],
+      "name": "E-7b5b9",
+      "midiKeys": [
+        64,
+        68,
+        70,
+        74,
+        77
+      ],
+      "type": "major",
+      "longName": "Emaj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "C",
+        "D",
+        "F"
+      ],
+      "name": "E-7#5b9",
+      "midiKeys": [
+        64,
+        68,
+        72,
+        74,
+        77
+      ],
+      "type": "major",
+      "longName": "Emaj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "A#",
+        "D",
+        "G"
+      ],
+      "name": "E-7b5#9",
+      "midiKeys": [
+        64,
+        68,
+        70,
+        74,
+        79
+      ],
+      "type": "major",
+      "longName": "Emaj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "C",
+        "D",
+        "G"
+      ],
+      "name": "E-7#5#9",
+      "midiKeys": [
+        64,
+        68,
+        72,
+        74,
+        79
+      ],
+      "type": "major",
+      "longName": "Emaj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "A#",
+        "D",
+        "F#"
+      ],
+      "name": "E-9b5",
+      "midiKeys": [
+        64,
+        68,
+        70,
+        74,
+        78
+      ],
+      "type": "major",
+      "longName": "Emaj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "D",
+        "F#",
+        "A#"
+      ],
+      "name": "E-9#11",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        74,
+        78,
+        82
+      ],
+      "type": "major",
+      "longName": "Emaj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "F#"
+      ],
+      "name": "E-add9",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        78
+      ],
+      "type": "major",
+      "longName": "Emajadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "D#"
+      ],
+      "name": "E-maj7",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        75
+      ],
+      "type": "major",
+      "longName": "Emaj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "A#",
+        "D#"
+      ],
+      "name": "E-maj7b5",
+      "midiKeys": [
+        64,
+        68,
+        70,
+        75
+      ],
+      "type": "major",
+      "longName": "Emaj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "C",
+        "D#"
+      ],
+      "name": "E-maj7#5",
+      "midiKeys": [
+        64,
+        68,
+        72,
+        75
+      ],
+      "type": "major",
+      "longName": "Emaj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "D#",
+        "F#"
+      ],
+      "name": "E-maj9",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        75,
+        78
+      ],
+      "type": "major",
+      "longName": "Emaj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "E",
+        "B",
+        "D#",
+        "F#",
+        "A"
+      ],
+      "name": "E-maj11",
+      "midiKeys": [
+        64,
+        71,
+        75,
+        78,
+        81
+      ],
+      "type": "major",
+      "longName": "Emaj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "E",
+        "G#",
+        "B",
+        "D#",
+        "F#",
+        "C#"
+      ],
+      "name": "E-maj13",
+      "midiKeys": [
+        64,
+        68,
+        71,
+        75,
+        78,
+        85
+      ],
+      "type": "major",
+      "longName": "Emaj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "B",
+        "C#"
+      ],
+      "name": "E-m6",
+      "midiKeys": [
+        64,
+        67,
+        71,
+        73
+      ],
+      "type": "minor",
+      "longName": "Em6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "B",
+        "C#",
+        "F#"
+      ],
+      "name": "E-m69",
+      "midiKeys": [
+        64,
+        67,
+        71,
+        73,
+        78
+      ],
+      "type": "minor",
+      "longName": "Em69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "B",
+        "D"
+      ],
+      "name": "E-m7",
+      "midiKeys": [
+        64,
+        67,
+        71,
+        74
+      ],
+      "type": "minor",
+      "longName": "Em7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "A#",
+        "D"
+      ],
+      "name": "E-m7b5",
+      "midiKeys": [
+        64,
+        67,
+        70,
+        74
+      ],
+      "type": "minor",
+      "longName": "Em7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "B",
+        "D",
+        "F#"
+      ],
+      "name": "E-m9",
+      "midiKeys": [
+        64,
+        67,
+        71,
+        74,
+        78
+      ],
+      "type": "minor",
+      "longName": "Em9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "B",
+        "D",
+        "F#",
+        "A"
+      ],
+      "name": "E-m11",
+      "midiKeys": [
+        64,
+        67,
+        71,
+        74,
+        78,
+        81
+      ],
+      "type": "minor",
+      "longName": "Em11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "B",
+        "D#"
+      ],
+      "name": "E-mmaj7",
+      "midiKeys": [
+        64,
+        67,
+        71,
+        75
+      ],
+      "type": "minor",
+      "longName": "Emmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "A#",
+        "D#"
+      ],
+      "name": "E-mmaj7b5",
+      "midiKeys": [
+        64,
+        67,
+        70,
+        75
+      ],
+      "type": "minor",
+      "longName": "Emmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "B",
+        "D#",
+        "F#"
+      ],
+      "name": "E-mmaj9",
+      "midiKeys": [
+        64,
+        67,
+        71,
+        75,
+        78
+      ],
+      "type": "minor",
+      "longName": "Emmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "B",
+        "D#",
+        "F#",
+        "A"
+      ],
+      "name": "E-mmaj11",
+      "midiKeys": [
+        64,
+        67,
+        71,
+        75,
+        78,
+        81
+      ],
+      "type": "minor",
+      "longName": "Emmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "E",
+        "G",
+        "B",
+        "F#"
+      ],
+      "name": "E-madd9",
+      "midiKeys": [
+        64,
+        67,
+        71,
+        78
+      ],
+      "type": "minor",
+      "longName": "Emadd9"
+    }
+  },
+  "F": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "F",
+        "C"
+      ],
+      "name": "F-5",
+      "midiKeys": [
+        65,
+        72
+      ],
+      "type": "major",
+      "longName": "Fmaj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "D"
+      ],
+      "name": "F-6",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        74
+      ],
+      "type": "major",
+      "longName": "Fmaj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "Eb"
+      ],
+      "name": "F-7",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        75
+      ],
+      "type": "major",
+      "longName": "Fmaj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "Eb",
+        "G"
+      ],
+      "name": "F-9",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        75,
+        79
+      ],
+      "type": "major",
+      "longName": "Fmaj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "Eb",
+        "G",
+        "Bb"
+      ],
+      "name": "F-11",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        75,
+        79,
+        82
+      ],
+      "type": "major",
+      "longName": "Fmaj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "Eb",
+        "G",
+        "Bb",
+        "D"
+      ],
+      "name": "F-13",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        75,
+        79,
+        82,
+        86
+      ],
+      "type": "major",
+      "longName": "Fmaj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "D",
+        "G"
+      ],
+      "name": "F-69",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        74,
+        79
+      ],
+      "type": "major",
+      "longName": "Fmaj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C"
+      ],
+      "name": "F-major",
+      "midiKeys": [
+        65,
+        69,
+        72
+      ],
+      "type": "major",
+      "longName": "Fmajor"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "C"
+      ],
+      "name": "F-m",
+      "midiKeys": [
+        65,
+        68,
+        72
+      ],
+      "type": "minor",
+      "longName": "Fm"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "B"
+      ],
+      "name": "F-dim",
+      "midiKeys": [
+        65,
+        68,
+        71
+      ],
+      "type": "minor",
+      "longName": "Fmajdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "B",
+        "D"
+      ],
+      "name": "F-dim7",
+      "midiKeys": [
+        65,
+        68,
+        71,
+        74
+      ],
+      "type": "minor",
+      "longName": "Fmajdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "F",
+        "G",
+        "C"
+      ],
+      "name": "F-sus2",
+      "midiKeys": [
+        65,
+        67,
+        72
+      ],
+      "type": "major",
+      "longName": "Fmajsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "F",
+        "Bb",
+        "C"
+      ],
+      "name": "F-sus4",
+      "midiKeys": [
+        65,
+        70,
+        72
+      ],
+      "type": "major",
+      "longName": "Fmajsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "F",
+        "Bb",
+        "C",
+        "Eb"
+      ],
+      "name": "F-7sus4",
+      "midiKeys": [
+        65,
+        70,
+        72,
+        75
+      ],
+      "type": "major",
+      "longName": "Fmaj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "Db"
+      ],
+      "name": "F-aug",
+      "midiKeys": [
+        65,
+        69,
+        73
+      ],
+      "type": "major",
+      "longName": "Fmajaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "Db",
+        "Eb"
+      ],
+      "name": "F-aug7",
+      "midiKeys": [
+        65,
+        69,
+        73,
+        75
+      ],
+      "type": "major",
+      "longName": "Fmajaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "Db",
+        "Eb",
+        "G"
+      ],
+      "name": "F-aug9",
+      "midiKeys": [
+        65,
+        69,
+        73,
+        75,
+        79
+      ],
+      "type": "major",
+      "longName": "Fmajaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "B",
+        "Eb"
+      ],
+      "name": "F-7b5",
+      "midiKeys": [
+        65,
+        69,
+        71,
+        75
+      ],
+      "type": "major",
+      "longName": "Fmaj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "Eb",
+        "Gb"
+      ],
+      "name": "F-7b9",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        75,
+        78
+      ],
+      "type": "major",
+      "longName": "Fmaj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "Eb",
+        "Ab"
+      ],
+      "name": "F-7#9",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        75,
+        80
+      ],
+      "type": "major",
+      "longName": "Fmaj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "B",
+        "Eb",
+        "Gb"
+      ],
+      "name": "F-7b5b9",
+      "midiKeys": [
+        65,
+        69,
+        71,
+        75,
+        78
+      ],
+      "type": "major",
+      "longName": "Fmaj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "Db",
+        "Eb",
+        "Gb"
+      ],
+      "name": "F-7#5b9",
+      "midiKeys": [
+        65,
+        69,
+        73,
+        75,
+        78
+      ],
+      "type": "major",
+      "longName": "Fmaj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "B",
+        "Eb",
+        "Ab"
+      ],
+      "name": "F-7b5#9",
+      "midiKeys": [
+        65,
+        69,
+        71,
+        75,
+        80
+      ],
+      "type": "major",
+      "longName": "Fmaj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "Db",
+        "Eb",
+        "Ab"
+      ],
+      "name": "F-7#5#9",
+      "midiKeys": [
+        65,
+        69,
+        73,
+        75,
+        80
+      ],
+      "type": "major",
+      "longName": "Fmaj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "B",
+        "Eb",
+        "G"
+      ],
+      "name": "F-9b5",
+      "midiKeys": [
+        65,
+        69,
+        71,
+        75,
+        79
+      ],
+      "type": "major",
+      "longName": "Fmaj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "Eb",
+        "G",
+        "B"
+      ],
+      "name": "F-9#11",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        75,
+        79,
+        83
+      ],
+      "type": "major",
+      "longName": "Fmaj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "G"
+      ],
+      "name": "F-add9",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        79
+      ],
+      "type": "major",
+      "longName": "Fmajadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "E"
+      ],
+      "name": "F-maj7",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        76
+      ],
+      "type": "major",
+      "longName": "Fmaj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "B",
+        "E"
+      ],
+      "name": "F-maj7b5",
+      "midiKeys": [
+        65,
+        69,
+        71,
+        76
+      ],
+      "type": "major",
+      "longName": "Fmaj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "Db",
+        "E"
+      ],
+      "name": "F-maj7#5",
+      "midiKeys": [
+        65,
+        69,
+        73,
+        76
+      ],
+      "type": "major",
+      "longName": "Fmaj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "E",
+        "G"
+      ],
+      "name": "F-maj9",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        76,
+        79
+      ],
+      "type": "major",
+      "longName": "Fmaj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "F",
+        "C",
+        "E",
+        "G",
+        "Bb"
+      ],
+      "name": "F-maj11",
+      "midiKeys": [
+        65,
+        72,
+        76,
+        79,
+        82
+      ],
+      "type": "major",
+      "longName": "Fmaj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "F",
+        "A",
+        "C",
+        "E",
+        "G",
+        "D"
+      ],
+      "name": "F-maj13",
+      "midiKeys": [
+        65,
+        69,
+        72,
+        76,
+        79,
+        86
+      ],
+      "type": "major",
+      "longName": "Fmaj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "C",
+        "D"
+      ],
+      "name": "F-m6",
+      "midiKeys": [
+        65,
+        68,
+        72,
+        74
+      ],
+      "type": "minor",
+      "longName": "Fm6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "C",
+        "D",
+        "G"
+      ],
+      "name": "F-m69",
+      "midiKeys": [
+        65,
+        68,
+        72,
+        74,
+        79
+      ],
+      "type": "minor",
+      "longName": "Fm69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "C",
+        "Eb"
+      ],
+      "name": "F-m7",
+      "midiKeys": [
+        65,
+        68,
+        72,
+        75
+      ],
+      "type": "minor",
+      "longName": "Fm7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "B",
+        "Eb"
+      ],
+      "name": "F-m7b5",
+      "midiKeys": [
+        65,
+        68,
+        71,
+        75
+      ],
+      "type": "minor",
+      "longName": "Fm7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "C",
+        "Eb",
+        "G"
+      ],
+      "name": "F-m9",
+      "midiKeys": [
+        65,
+        68,
+        72,
+        75,
+        79
+      ],
+      "type": "minor",
+      "longName": "Fm9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "C",
+        "Eb",
+        "G",
+        "Bb"
+      ],
+      "name": "F-m11",
+      "midiKeys": [
+        65,
+        68,
+        72,
+        75,
+        79,
+        82
+      ],
+      "type": "minor",
+      "longName": "Fm11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "C",
+        "E"
+      ],
+      "name": "F-mmaj7",
+      "midiKeys": [
+        65,
+        68,
+        72,
+        76
+      ],
+      "type": "minor",
+      "longName": "Fmmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "B",
+        "E"
+      ],
+      "name": "F-mmaj7b5",
+      "midiKeys": [
+        65,
+        68,
+        71,
+        76
+      ],
+      "type": "minor",
+      "longName": "Fmmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "C",
+        "E",
+        "G"
+      ],
+      "name": "F-mmaj9",
+      "midiKeys": [
+        65,
+        68,
+        72,
+        76,
+        79
+      ],
+      "type": "minor",
+      "longName": "Fmmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "C",
+        "E",
+        "G",
+        "Bb"
+      ],
+      "name": "F-mmaj11",
+      "midiKeys": [
+        65,
+        68,
+        72,
+        76,
+        79,
+        82
+      ],
+      "type": "minor",
+      "longName": "Fmmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "F",
+        "Ab",
+        "C",
+        "G"
+      ],
+      "name": "F-madd9",
+      "midiKeys": [
+        65,
+        68,
+        72,
+        79
+      ],
+      "type": "minor",
+      "longName": "Fmadd9"
+    }
+  },
+  "F#": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "F#",
+        "C#"
+      ],
+      "name": "F#-5",
+      "midiKeys": [
+        66,
+        73
+      ],
+      "type": "major",
+      "longName": "F#maj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "D#"
+      ],
+      "name": "F#-6",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        75
+      ],
+      "type": "major",
+      "longName": "F#maj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "E"
+      ],
+      "name": "F#-7",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        76
+      ],
+      "type": "major",
+      "longName": "F#maj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "E",
+        "G#"
+      ],
+      "name": "F#-9",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        76,
+        80
+      ],
+      "type": "major",
+      "longName": "F#maj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "E",
+        "G#",
+        "B"
+      ],
+      "name": "F#-11",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        76,
+        80,
+        83
+      ],
+      "type": "major",
+      "longName": "F#maj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "E",
+        "G#",
+        "B",
+        "D#"
+      ],
+      "name": "F#-13",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        76,
+        80,
+        83,
+        87
+      ],
+      "type": "major",
+      "longName": "F#maj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "D#",
+        "G#"
+      ],
+      "name": "F#-69",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        75,
+        80
+      ],
+      "type": "major",
+      "longName": "F#maj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#"
+      ],
+      "name": "F#-major",
+      "midiKeys": [
+        66,
+        70,
+        73
+      ],
+      "type": "major",
+      "longName": "F#major"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C#"
+      ],
+      "name": "F#-m",
+      "midiKeys": [
+        66,
+        69,
+        73
+      ],
+      "type": "minor",
+      "longName": "F#m"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C"
+      ],
+      "name": "F#-dim",
+      "midiKeys": [
+        66,
+        69,
+        72
+      ],
+      "type": "minor",
+      "longName": "F#majdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C",
+        "D#"
+      ],
+      "name": "F#-dim7",
+      "midiKeys": [
+        66,
+        69,
+        72,
+        75
+      ],
+      "type": "minor",
+      "longName": "F#majdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "F#",
+        "G#",
+        "C#"
+      ],
+      "name": "F#-sus2",
+      "midiKeys": [
+        66,
+        68,
+        73
+      ],
+      "type": "major",
+      "longName": "F#majsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "F#",
+        "B",
+        "C#"
+      ],
+      "name": "F#-sus4",
+      "midiKeys": [
+        66,
+        71,
+        73
+      ],
+      "type": "major",
+      "longName": "F#majsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "F#",
+        "B",
+        "C#",
+        "E"
+      ],
+      "name": "F#-7sus4",
+      "midiKeys": [
+        66,
+        71,
+        73,
+        76
+      ],
+      "type": "major",
+      "longName": "F#maj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "D"
+      ],
+      "name": "F#-aug",
+      "midiKeys": [
+        66,
+        70,
+        74
+      ],
+      "type": "major",
+      "longName": "F#majaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "D",
+        "E"
+      ],
+      "name": "F#-aug7",
+      "midiKeys": [
+        66,
+        70,
+        74,
+        76
+      ],
+      "type": "major",
+      "longName": "F#majaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "D",
+        "E",
+        "G#"
+      ],
+      "name": "F#-aug9",
+      "midiKeys": [
+        66,
+        70,
+        74,
+        76,
+        80
+      ],
+      "type": "major",
+      "longName": "F#majaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C",
+        "E"
+      ],
+      "name": "F#-7b5",
+      "midiKeys": [
+        66,
+        70,
+        72,
+        76
+      ],
+      "type": "major",
+      "longName": "F#maj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "E",
+        "G"
+      ],
+      "name": "F#-7b9",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        76,
+        79
+      ],
+      "type": "major",
+      "longName": "F#maj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "E",
+        "A"
+      ],
+      "name": "F#-7#9",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        76,
+        81
+      ],
+      "type": "major",
+      "longName": "F#maj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C",
+        "E",
+        "G"
+      ],
+      "name": "F#-7b5b9",
+      "midiKeys": [
+        66,
+        70,
+        72,
+        76,
+        79
+      ],
+      "type": "major",
+      "longName": "F#maj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "D",
+        "E",
+        "G"
+      ],
+      "name": "F#-7#5b9",
+      "midiKeys": [
+        66,
+        70,
+        74,
+        76,
+        79
+      ],
+      "type": "major",
+      "longName": "F#maj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C",
+        "E",
+        "A"
+      ],
+      "name": "F#-7b5#9",
+      "midiKeys": [
+        66,
+        70,
+        72,
+        76,
+        81
+      ],
+      "type": "major",
+      "longName": "F#maj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "D",
+        "E",
+        "A"
+      ],
+      "name": "F#-7#5#9",
+      "midiKeys": [
+        66,
+        70,
+        74,
+        76,
+        81
+      ],
+      "type": "major",
+      "longName": "F#maj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C",
+        "E",
+        "G#"
+      ],
+      "name": "F#-9b5",
+      "midiKeys": [
+        66,
+        70,
+        72,
+        76,
+        80
+      ],
+      "type": "major",
+      "longName": "F#maj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "E",
+        "G#",
+        "C"
+      ],
+      "name": "F#-9#11",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        76,
+        80,
+        84
+      ],
+      "type": "major",
+      "longName": "F#maj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "G#"
+      ],
+      "name": "F#-add9",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        80
+      ],
+      "type": "major",
+      "longName": "F#majadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "F"
+      ],
+      "name": "F#-maj7",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        77
+      ],
+      "type": "major",
+      "longName": "F#maj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C",
+        "F"
+      ],
+      "name": "F#-maj7b5",
+      "midiKeys": [
+        66,
+        70,
+        72,
+        77
+      ],
+      "type": "major",
+      "longName": "F#maj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "D",
+        "F"
+      ],
+      "name": "F#-maj7#5",
+      "midiKeys": [
+        66,
+        70,
+        74,
+        77
+      ],
+      "type": "major",
+      "longName": "F#maj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "F",
+        "G#"
+      ],
+      "name": "F#-maj9",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        77,
+        80
+      ],
+      "type": "major",
+      "longName": "F#maj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "F#",
+        "C#",
+        "F",
+        "G#",
+        "B"
+      ],
+      "name": "F#-maj11",
+      "midiKeys": [
+        66,
+        73,
+        77,
+        80,
+        83
+      ],
+      "type": "major",
+      "longName": "F#maj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "F#",
+        "A#",
+        "C#",
+        "F",
+        "G#",
+        "D#"
+      ],
+      "name": "F#-maj13",
+      "midiKeys": [
+        66,
+        70,
+        73,
+        77,
+        80,
+        87
+      ],
+      "type": "major",
+      "longName": "F#maj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C#",
+        "D#"
+      ],
+      "name": "F#-m6",
+      "midiKeys": [
+        66,
+        69,
+        73,
+        75
+      ],
+      "type": "minor",
+      "longName": "F#m6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C#",
+        "D#",
+        "G#"
+      ],
+      "name": "F#-m69",
+      "midiKeys": [
+        66,
+        69,
+        73,
+        75,
+        80
+      ],
+      "type": "minor",
+      "longName": "F#m69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C#",
+        "E"
+      ],
+      "name": "F#-m7",
+      "midiKeys": [
+        66,
+        69,
+        73,
+        76
+      ],
+      "type": "minor",
+      "longName": "F#m7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C",
+        "E"
+      ],
+      "name": "F#-m7b5",
+      "midiKeys": [
+        66,
+        69,
+        72,
+        76
+      ],
+      "type": "minor",
+      "longName": "F#m7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C#",
+        "E",
+        "G#"
+      ],
+      "name": "F#-m9",
+      "midiKeys": [
+        66,
+        69,
+        73,
+        76,
+        80
+      ],
+      "type": "minor",
+      "longName": "F#m9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C#",
+        "E",
+        "G#",
+        "B"
+      ],
+      "name": "F#-m11",
+      "midiKeys": [
+        66,
+        69,
+        73,
+        76,
+        80,
+        83
+      ],
+      "type": "minor",
+      "longName": "F#m11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C#",
+        "F"
+      ],
+      "name": "F#-mmaj7",
+      "midiKeys": [
+        66,
+        69,
+        73,
+        77
+      ],
+      "type": "minor",
+      "longName": "F#mmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C",
+        "F"
+      ],
+      "name": "F#-mmaj7b5",
+      "midiKeys": [
+        66,
+        69,
+        72,
+        77
+      ],
+      "type": "minor",
+      "longName": "F#mmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C#",
+        "F",
+        "G#"
+      ],
+      "name": "F#-mmaj9",
+      "midiKeys": [
+        66,
+        69,
+        73,
+        77,
+        80
+      ],
+      "type": "minor",
+      "longName": "F#mmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C#",
+        "F",
+        "G#",
+        "B"
+      ],
+      "name": "F#-mmaj11",
+      "midiKeys": [
+        66,
+        69,
+        73,
+        77,
+        80,
+        83
+      ],
+      "type": "minor",
+      "longName": "F#mmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "F#",
+        "A",
+        "C#",
+        "G#"
+      ],
+      "name": "F#-madd9",
+      "midiKeys": [
+        66,
+        69,
+        73,
+        80
+      ],
+      "type": "minor",
+      "longName": "F#madd9"
+    }
+  },
+  "G": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "G",
+        "D"
+      ],
+      "name": "G-5",
+      "midiKeys": [
+        67,
+        74
+      ],
+      "type": "major",
+      "longName": "Gmaj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "E"
+      ],
+      "name": "G-6",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        76
+      ],
+      "type": "major",
+      "longName": "Gmaj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "F"
+      ],
+      "name": "G-7",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        77
+      ],
+      "type": "major",
+      "longName": "Gmaj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "F",
+        "A"
+      ],
+      "name": "G-9",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        77,
+        81
+      ],
+      "type": "major",
+      "longName": "Gmaj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "F",
+        "A",
+        "C"
+      ],
+      "name": "G-11",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        77,
+        81,
+        84
+      ],
+      "type": "major",
+      "longName": "Gmaj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "F",
+        "A",
+        "C",
+        "E"
+      ],
+      "name": "G-13",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        77,
+        81,
+        84,
+        88
+      ],
+      "type": "major",
+      "longName": "Gmaj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "E",
+        "A"
+      ],
+      "name": "G-69",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        76,
+        81
+      ],
+      "type": "major",
+      "longName": "Gmaj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D"
+      ],
+      "name": "G-major",
+      "midiKeys": [
+        67,
+        71,
+        74
+      ],
+      "type": "major",
+      "longName": "Gmajor"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "D"
+      ],
+      "name": "G-m",
+      "midiKeys": [
+        67,
+        70,
+        74
+      ],
+      "type": "minor",
+      "longName": "Gm"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "G",
+        "A#",
+        "C#"
+      ],
+      "name": "G-dim",
+      "midiKeys": [
+        67,
+        70,
+        73
+      ],
+      "type": "minor",
+      "longName": "Gmajdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "G",
+        "A#",
+        "C#",
+        "E"
+      ],
+      "name": "G-dim7",
+      "midiKeys": [
+        67,
+        70,
+        73,
+        76
+      ],
+      "type": "minor",
+      "longName": "Gmajdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "G",
+        "A",
+        "D"
+      ],
+      "name": "G-sus2",
+      "midiKeys": [
+        67,
+        69,
+        74
+      ],
+      "type": "major",
+      "longName": "Gmajsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "G",
+        "C",
+        "D"
+      ],
+      "name": "G-sus4",
+      "midiKeys": [
+        67,
+        72,
+        74
+      ],
+      "type": "major",
+      "longName": "Gmajsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "G",
+        "C",
+        "D",
+        "F"
+      ],
+      "name": "G-7sus4",
+      "midiKeys": [
+        67,
+        72,
+        74,
+        77
+      ],
+      "type": "major",
+      "longName": "Gmaj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D#"
+      ],
+      "name": "G-aug",
+      "midiKeys": [
+        67,
+        71,
+        75
+      ],
+      "type": "major",
+      "longName": "Gmajaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D#",
+        "F"
+      ],
+      "name": "G-aug7",
+      "midiKeys": [
+        67,
+        71,
+        75,
+        77
+      ],
+      "type": "major",
+      "longName": "Gmajaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D#",
+        "F",
+        "A"
+      ],
+      "name": "G-aug9",
+      "midiKeys": [
+        67,
+        71,
+        75,
+        77,
+        81
+      ],
+      "type": "major",
+      "longName": "Gmajaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "C#",
+        "F"
+      ],
+      "name": "G-7b5",
+      "midiKeys": [
+        67,
+        71,
+        73,
+        77
+      ],
+      "type": "major",
+      "longName": "Gmaj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "F",
+        "G#"
+      ],
+      "name": "G-7b9",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        77,
+        80
+      ],
+      "type": "major",
+      "longName": "Gmaj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "F",
+        "A#"
+      ],
+      "name": "G-7#9",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        77,
+        82
+      ],
+      "type": "major",
+      "longName": "Gmaj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "C#",
+        "F",
+        "G#"
+      ],
+      "name": "G-7b5b9",
+      "midiKeys": [
+        67,
+        71,
+        73,
+        77,
+        80
+      ],
+      "type": "major",
+      "longName": "Gmaj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D#",
+        "F",
+        "G#"
+      ],
+      "name": "G-7#5b9",
+      "midiKeys": [
+        67,
+        71,
+        75,
+        77,
+        80
+      ],
+      "type": "major",
+      "longName": "Gmaj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "C#",
+        "F",
+        "A#"
+      ],
+      "name": "G-7b5#9",
+      "midiKeys": [
+        67,
+        71,
+        73,
+        77,
+        82
+      ],
+      "type": "major",
+      "longName": "Gmaj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D#",
+        "F",
+        "A#"
+      ],
+      "name": "G-7#5#9",
+      "midiKeys": [
+        67,
+        71,
+        75,
+        77,
+        82
+      ],
+      "type": "major",
+      "longName": "Gmaj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "C#",
+        "F",
+        "A"
+      ],
+      "name": "G-9b5",
+      "midiKeys": [
+        67,
+        71,
+        73,
+        77,
+        81
+      ],
+      "type": "major",
+      "longName": "Gmaj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "F",
+        "A",
+        "C#"
+      ],
+      "name": "G-9#11",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        77,
+        81,
+        85
+      ],
+      "type": "major",
+      "longName": "Gmaj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "A"
+      ],
+      "name": "G-add9",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        81
+      ],
+      "type": "major",
+      "longName": "Gmajadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "F#"
+      ],
+      "name": "G-maj7",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        78
+      ],
+      "type": "major",
+      "longName": "Gmaj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "C#",
+        "F#"
+      ],
+      "name": "G-maj7b5",
+      "midiKeys": [
+        67,
+        71,
+        73,
+        78
+      ],
+      "type": "major",
+      "longName": "Gmaj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D#",
+        "F#"
+      ],
+      "name": "G-maj7#5",
+      "midiKeys": [
+        67,
+        71,
+        75,
+        78
+      ],
+      "type": "major",
+      "longName": "Gmaj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "F#",
+        "A"
+      ],
+      "name": "G-maj9",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        78,
+        81
+      ],
+      "type": "major",
+      "longName": "Gmaj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "G",
+        "D",
+        "F#",
+        "A",
+        "C"
+      ],
+      "name": "G-maj11",
+      "midiKeys": [
+        67,
+        74,
+        78,
+        81,
+        84
+      ],
+      "type": "major",
+      "longName": "Gmaj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "G",
+        "B",
+        "D",
+        "F#",
+        "A",
+        "E"
+      ],
+      "name": "G-maj13",
+      "midiKeys": [
+        67,
+        71,
+        74,
+        78,
+        81,
+        88
+      ],
+      "type": "major",
+      "longName": "Gmaj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "D",
+        "E"
+      ],
+      "name": "G-m6",
+      "midiKeys": [
+        67,
+        70,
+        74,
+        76
+      ],
+      "type": "minor",
+      "longName": "Gm6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "D",
+        "E",
+        "A"
+      ],
+      "name": "G-m69",
+      "midiKeys": [
+        67,
+        70,
+        74,
+        76,
+        81
+      ],
+      "type": "minor",
+      "longName": "Gm69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "D",
+        "F"
+      ],
+      "name": "G-m7",
+      "midiKeys": [
+        67,
+        70,
+        74,
+        77
+      ],
+      "type": "minor",
+      "longName": "Gm7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "Db",
+        "F"
+      ],
+      "name": "G-m7b5",
+      "midiKeys": [
+        67,
+        70,
+        73,
+        77
+      ],
+      "type": "minor",
+      "longName": "Gm7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "D",
+        "F",
+        "A"
+      ],
+      "name": "G-m9",
+      "midiKeys": [
+        67,
+        70,
+        74,
+        77,
+        81
+      ],
+      "type": "minor",
+      "longName": "Gm9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "D",
+        "F",
+        "A",
+        "C"
+      ],
+      "name": "G-m11",
+      "midiKeys": [
+        67,
+        70,
+        74,
+        77,
+        81,
+        84
+      ],
+      "type": "minor",
+      "longName": "Gm11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "D",
+        "Gb"
+      ],
+      "name": "G-mmaj7",
+      "midiKeys": [
+        67,
+        70,
+        74,
+        78
+      ],
+      "type": "minor",
+      "longName": "Gmmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "Db",
+        "Gb"
+      ],
+      "name": "G-mmaj7b5",
+      "midiKeys": [
+        67,
+        70,
+        73,
+        78
+      ],
+      "type": "minor",
+      "longName": "Gmmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "D",
+        "Gb",
+        "A"
+      ],
+      "name": "G-mmaj9",
+      "midiKeys": [
+        67,
+        70,
+        74,
+        78,
+        81
+      ],
+      "type": "minor",
+      "longName": "Gmmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "D",
+        "Gb",
+        "A",
+        "C"
+      ],
+      "name": "G-mmaj11",
+      "midiKeys": [
+        67,
+        70,
+        74,
+        78,
+        81,
+        84
+      ],
+      "type": "minor",
+      "longName": "Gmmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "G",
+        "Bb",
+        "D",
+        "A"
+      ],
+      "name": "G-madd9",
+      "midiKeys": [
+        67,
+        70,
+        74,
+        81
+      ],
+      "type": "minor",
+      "longName": "Gmadd9"
+    }
+  },
+  "G#": {
+    "5": {
+      "intervals": [
+        "1",
+        "5"
+      ],
+      "notes": [
+        "G#",
+        "D#"
+      ],
+      "name": "G#-5",
+      "midiKeys": [
+        68,
+        75
+      ],
+      "type": "major",
+      "longName": "G#maj5"
+    },
+    "6": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "F"
+      ],
+      "name": "G#-6",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        77
+      ],
+      "type": "major",
+      "longName": "G#maj6"
+    },
+    "7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "F#"
+      ],
+      "name": "G#-7",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        78
+      ],
+      "type": "major",
+      "longName": "G#maj7"
+    },
+    "9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "F#",
+        "A#"
+      ],
+      "name": "G#-9",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        78,
+        82
+      ],
+      "type": "major",
+      "longName": "G#maj9"
+    },
+    "11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "F#",
+        "A#",
+        "C#"
+      ],
+      "name": "G#-11",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        78,
+        82,
+        85
+      ],
+      "type": "major",
+      "longName": "G#maj11"
+    },
+    "13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "11",
+        "13"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "F#",
+        "A#",
+        "C#",
+        "F"
+      ],
+      "name": "G#-13",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        78,
+        82,
+        85,
+        89
+      ],
+      "type": "major",
+      "longName": "G#maj13"
+    },
+    "69": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "F",
+        "A#"
+      ],
+      "name": "G#-69",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        77,
+        82
+      ],
+      "type": "major",
+      "longName": "G#maj69"
+    },
+    "major": {
+      "intervals": [
+        "1",
+        "3",
+        "5"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#"
+      ],
+      "name": "G#-major",
+      "midiKeys": [
+        68,
+        72,
+        75
+      ],
+      "type": "major",
+      "longName": "G#major"
+    },
+    "m": {
+      "intervals": [
+        "1",
+        "b3",
+        "5"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D#"
+      ],
+      "name": "G#-m",
+      "midiKeys": [
+        68,
+        71,
+        75
+      ],
+      "type": "minor",
+      "longName": "G#m"
+    },
+    "dim": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D"
+      ],
+      "name": "G#-dim",
+      "midiKeys": [
+        68,
+        71,
+        74
+      ],
+      "type": "minor",
+      "longName": "G#majdim"
+    },
+    "dim7": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "6"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D",
+        "F"
+      ],
+      "name": "G#-dim7",
+      "midiKeys": [
+        68,
+        71,
+        74,
+        77
+      ],
+      "type": "minor",
+      "longName": "G#majdim7"
+    },
+    "sus2": {
+      "intervals": [
+        "1",
+        "2",
+        "5"
+      ],
+      "notes": [
+        "G#",
+        "A#",
+        "D#"
+      ],
+      "name": "G#-sus2",
+      "midiKeys": [
+        68,
+        70,
+        75
+      ],
+      "type": "major",
+      "longName": "G#majsus2"
+    },
+    "sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5"
+      ],
+      "notes": [
+        "G#",
+        "C#",
+        "D#"
+      ],
+      "name": "G#-sus4",
+      "midiKeys": [
+        68,
+        73,
+        75
+      ],
+      "type": "major",
+      "longName": "G#majsus4"
+    },
+    "7sus4": {
+      "intervals": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "G#",
+        "C#",
+        "D#",
+        "F#"
+      ],
+      "name": "G#-7sus4",
+      "midiKeys": [
+        68,
+        73,
+        75,
+        78
+      ],
+      "type": "major",
+      "longName": "G#maj7sus4"
+    },
+    "aug": {
+      "intervals": [
+        "1",
+        "3",
+        "#5"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "E"
+      ],
+      "name": "G#-aug",
+      "midiKeys": [
+        68,
+        72,
+        76
+      ],
+      "type": "major",
+      "longName": "G#majaug"
+    },
+    "aug7": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "E",
+        "F#"
+      ],
+      "name": "G#-aug7",
+      "midiKeys": [
+        68,
+        72,
+        76,
+        78
+      ],
+      "type": "major",
+      "longName": "G#majaug7"
+    },
+    "aug9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "E",
+        "F#",
+        "A#"
+      ],
+      "name": "G#-aug9",
+      "midiKeys": [
+        68,
+        72,
+        76,
+        78,
+        82
+      ],
+      "type": "major",
+      "longName": "G#majaug9"
+    },
+    "7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D",
+        "F#"
+      ],
+      "name": "G#-7b5",
+      "midiKeys": [
+        68,
+        72,
+        74,
+        78
+      ],
+      "type": "major",
+      "longName": "G#maj7b5"
+    },
+    "7b9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "F#",
+        "A"
+      ],
+      "name": "G#-7b9",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        78,
+        81
+      ],
+      "type": "major",
+      "longName": "G#maj7b9"
+    },
+    "7#9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "F#",
+        "B"
+      ],
+      "name": "G#-7#9",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        78,
+        83
+      ],
+      "type": "major",
+      "longName": "G#maj7#9"
+    },
+    "7b5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D",
+        "F#",
+        "A"
+      ],
+      "name": "G#-7b5b9",
+      "midiKeys": [
+        68,
+        72,
+        74,
+        78,
+        81
+      ],
+      "type": "major",
+      "longName": "G#maj7b5b9"
+    },
+    "7#5b9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "b9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "E",
+        "F#",
+        "A"
+      ],
+      "name": "G#-7#5b9",
+      "midiKeys": [
+        68,
+        72,
+        76,
+        78,
+        81
+      ],
+      "type": "major",
+      "longName": "G#maj7#5b9"
+    },
+    "7b5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D",
+        "F#",
+        "B"
+      ],
+      "name": "G#-7b5#9",
+      "midiKeys": [
+        68,
+        72,
+        74,
+        78,
+        83
+      ],
+      "type": "major",
+      "longName": "G#maj7b5#9"
+    },
+    "7#5#9": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "#9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "E",
+        "F#",
+        "B"
+      ],
+      "name": "G#-7#5#9",
+      "midiKeys": [
+        68,
+        72,
+        76,
+        78,
+        83
+      ],
+      "type": "major",
+      "longName": "G#maj7#5#9"
+    },
+    "9b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D",
+        "F#",
+        "A#"
+      ],
+      "name": "G#-9b5",
+      "midiKeys": [
+        68,
+        72,
+        74,
+        78,
+        82
+      ],
+      "type": "major",
+      "longName": "G#maj9b5"
+    },
+    "9#11": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "#11"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "F#",
+        "A#",
+        "D"
+      ],
+      "name": "G#-9#11",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        78,
+        82,
+        86
+      ],
+      "type": "major",
+      "longName": "G#maj9#11"
+    },
+    "add9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "A#"
+      ],
+      "name": "G#-add9",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        82
+      ],
+      "type": "major",
+      "longName": "G#majadd9"
+    },
+    "maj7": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "G"
+      ],
+      "name": "G#-maj7",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        79
+      ],
+      "type": "major",
+      "longName": "G#maj7"
+    },
+    "maj7b5": {
+      "intervals": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D",
+        "G"
+      ],
+      "name": "G#-maj7b5",
+      "midiKeys": [
+        68,
+        72,
+        74,
+        79
+      ],
+      "type": "major",
+      "longName": "G#maj7b5"
+    },
+    "maj7#5": {
+      "intervals": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "E",
+        "G"
+      ],
+      "name": "G#-maj7#5",
+      "midiKeys": [
+        68,
+        72,
+        76,
+        79
+      ],
+      "type": "major",
+      "longName": "G#maj7#5"
+    },
+    "maj9": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "G",
+        "A#"
+      ],
+      "name": "G#-maj9",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        79,
+        82
+      ],
+      "type": "major",
+      "longName": "G#maj9"
+    },
+    "maj11": {
+      "intervals": [
+        "1",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "G#",
+        "D#",
+        "G",
+        "A#",
+        "C#"
+      ],
+      "name": "G#-maj11",
+      "midiKeys": [
+        68,
+        75,
+        79,
+        82,
+        85
+      ],
+      "type": "major",
+      "longName": "G#maj11"
+    },
+    "maj13": {
+      "intervals": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ],
+      "notes": [
+        "G#",
+        "C",
+        "D#",
+        "G",
+        "A#",
+        "F"
+      ],
+      "name": "G#-maj13",
+      "midiKeys": [
+        68,
+        72,
+        75,
+        79,
+        82,
+        89
+      ],
+      "type": "major",
+      "longName": "G#maj13"
+    },
+    "m6": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D#",
+        "F"
+      ],
+      "name": "G#-m6",
+      "midiKeys": [
+        68,
+        71,
+        75,
+        77
+      ],
+      "type": "minor",
+      "longName": "G#m6"
+    },
+    "m69": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D#",
+        "F",
+        "A#"
+      ],
+      "name": "G#-m69",
+      "midiKeys": [
+        68,
+        71,
+        75,
+        77,
+        82
+      ],
+      "type": "minor",
+      "longName": "G#m69"
+    },
+    "m7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D#",
+        "F#"
+      ],
+      "name": "G#-m7",
+      "midiKeys": [
+        68,
+        71,
+        75,
+        78
+      ],
+      "type": "minor",
+      "longName": "G#m7"
+    },
+    "m7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D",
+        "F#"
+      ],
+      "name": "G#-m7b5",
+      "midiKeys": [
+        68,
+        71,
+        74,
+        78
+      ],
+      "type": "minor",
+      "longName": "G#m7b5"
+    },
+    "m9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D#",
+        "F#",
+        "A#"
+      ],
+      "name": "G#-m9",
+      "midiKeys": [
+        68,
+        71,
+        75,
+        78,
+        82
+      ],
+      "type": "minor",
+      "longName": "G#m9"
+    },
+    "m11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D#",
+        "F#",
+        "A#",
+        "C#"
+      ],
+      "name": "G#-m11",
+      "midiKeys": [
+        68,
+        71,
+        75,
+        78,
+        82,
+        85
+      ],
+      "type": "minor",
+      "longName": "G#m11"
+    },
+    "mmaj7": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D#",
+        "G"
+      ],
+      "name": "G#-mmaj7",
+      "midiKeys": [
+        68,
+        71,
+        75,
+        79
+      ],
+      "type": "minor",
+      "longName": "G#mmaj7"
+    },
+    "mmaj7b5": {
+      "intervals": [
+        "1",
+        "b3",
+        "b5",
+        "7"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D",
+        "G"
+      ],
+      "name": "G#-mmaj7b5",
+      "midiKeys": [
+        68,
+        71,
+        74,
+        79
+      ],
+      "type": "minor",
+      "longName": "G#mmaj7b5"
+    },
+    "mmaj9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D#",
+        "G",
+        "A#"
+      ],
+      "name": "G#-mmaj9",
+      "midiKeys": [
+        68,
+        71,
+        75,
+        79,
+        82
+      ],
+      "type": "minor",
+      "longName": "G#mmaj9"
+    },
+    "mmaj11": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D#",
+        "G",
+        "A#",
+        "C#"
+      ],
+      "name": "G#-mmaj11",
+      "midiKeys": [
+        68,
+        71,
+        75,
+        79,
+        82,
+        85
+      ],
+      "type": "minor",
+      "longName": "G#mmaj11"
+    },
+    "madd9": {
+      "intervals": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ],
+      "notes": [
+        "G#",
+        "B",
+        "D#",
+        "A#"
+      ],
+      "name": "G#-madd9",
+      "midiKeys": [
+        68,
+        71,
+        75,
+        82
+      ],
+      "type": "minor",
+      "longName": "G#madd9"
+    }
+  }
+}
