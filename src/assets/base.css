@@ -19,6 +19,28 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --base-green: #54893e;
+  --light-green-1: #80a94d;
+  --light-green-2: #a3c85e;
+  --light-green-3: #c2e272;
+  --light-green-4: #e1f190;
+  --lightest-green: #f2f9e6;
+
+  --orange: #e87d1b;
+  --light-orange: #f4a15c;
+
+  --blue: #1b89e8;
+  --light-blue: #5fa2e8;
+
+  --purple: #9b1be8;
+  --light-purple: #b96ef5;
+
+  --dark-blue: #0d3b66;
+  --light-dark-blue: #4c6e8d;
+
+  --yellow: #e8c71b;
+  --light-yellow: #f0d877;
 }
 
 /* semantic color variables for this project */
@@ -79,8 +101,22 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+  color: var(--base-green);
 }

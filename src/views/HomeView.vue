@@ -35,7 +35,7 @@ const goToPage = (page) => {
 <template>
   <v-container fluid max-width="1200px">
     <div class="p-4">
-      <h1 class="text-2xl font-bold mb-4">Top Cryptocurrencies</h1>
+      <h2 class="text-2xl font-bold mb-4">Top Cryptocurrencies</h2>
 
       <!-- Chart display -->
       <canvas id="cryptoChart" class="mb-6"></canvas>
@@ -78,3 +78,8 @@ const goToPage = (page) => {
 
   </v-container>
 </template>
+<style lang="scss" scoped>
+ul {
+  list-style: none;
+}
+</style>
