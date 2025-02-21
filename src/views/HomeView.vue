@@ -31,7 +31,6 @@ const goToPage = (page) => {
 };
 </script>
 
-
 <template>
   <v-container fluid max-width="1200px">
     <div class="p-4">
@@ -51,34 +50,54 @@ const goToPage = (page) => {
       </ul>
 
       <!-- Pagination controls -->
-      <div class="flex justify-center items-center mt-4 space-x-2">
+      <div class="pagination">
         <!-- Previous Button -->
-        <button @click="prevPage" :disabled="currentPage === 1"
-                class="px-3 py-1 bg-gray-200 rounded disabled:opacity-50">
+        <v-btn @click="prevPage" :disabled="currentPage === 1" color="primary" class="prev" variant="text">
           Previous
-        </button>
+        </v-btn>
 
         <!-- Page Numbers -->
-        <button v-for="page in displayedPages" :key="page"
-                @click="goToPage(page)"
-                class="px-3 py-1 rounded"
-                :class="page === currentPage ? 'bg-blue-500 text-white' : 'bg-gray-200'">
-          {{ page }}
-        </button>
+        <div class="page-numbers">
+          <v-btn v-for="page in displayedPages" :key="page"
+                 @click="goToPage(page)"
+                 :color="page === currentPage ? 'secondary' : 'primary'"
+                 :class="{'active-page': page === currentPage}"
+                 class="btn" variant="text">
+            {{ page }}
+          </v-btn>
+        </div>
 
         <!-- Next Button -->
-        <button @click="nextPage" :disabled="currentPage === totalPages"
-                class="px-3 py-1 bg-gray-200 rounded disabled:opacity-50">
+        <v-btn @click="nextPage" :disabled="currentPage === totalPages" color="primary" class="next" variant="text">
           Next
-        </button>
+        </v-btn>
       </div>
-
-
     </div>
-
   </v-container>
 </template>
+
 <style lang="scss" scoped>
+.pagination {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.page-numbers {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 500px) {
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+  }
+  .page-numbers {
+    padding: 0 1em;
+  }
+}
 ul {
   list-style: none;
 }
