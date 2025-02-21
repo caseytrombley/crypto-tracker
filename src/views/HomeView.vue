@@ -4,7 +4,6 @@ import { useCryptoStore } from '@/stores/cryptoStore';
 
 const { coins, currentPage, totalPages, fetchCryptoData, nextPage, prevPage } = useCryptoStore();
 
-// Fetch data on mount
 onMounted(() => {
   fetchCryptoData();
 });
