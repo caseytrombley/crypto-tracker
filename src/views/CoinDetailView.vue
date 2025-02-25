@@ -104,39 +104,39 @@ watch(() => route.params.id, fetchCoinData);
       <v-card-title class="text-h6 font-weight-bold">Market Stats</v-card-title>
       <v-list dense>
         <v-list-item>
-          <v-list-item-content>
+          <div>
             <v-list-item-title>All-Time High</v-list-item-title>
             <v-list-item-subtitle>
               ${{ coin.market_data.ath.usd.toLocaleString() }} ({{ new Date(coin.market_data.ath_date.usd).toLocaleDateString() }})
             </v-list-item-subtitle>
-          </v-list-item-content>
+          </div>
         </v-list-item>
 
         <v-list-item>
-          <v-list-item-content>
+          <div>
             <v-list-item-title>All-Time Low</v-list-item-title>
             <v-list-item-subtitle>
               ${{ coin.market_data.atl.usd.toLocaleString() }} ({{ new Date(coin.market_data.atl_date.usd).toLocaleDateString() }})
             </v-list-item-subtitle>
-          </v-list-item-content>
+          </div>
         </v-list-item>
 
         <v-list-item>
-          <v-list-item-content>
+          <div>
             <v-list-item-title>Total Supply</v-list-item-title>
             <v-list-item-subtitle>
               {{ coin.market_data.total_supply?.toLocaleString() ?? 'N/A' }}
             </v-list-item-subtitle>
-          </v-list-item-content>
+          </div>
         </v-list-item>
 
         <v-list-item>
-          <v-list-item-content>
+          <div>
             <v-list-item-title>Circulating Supply</v-list-item-title>
             <v-list-item-subtitle>
               {{ coin.market_data.circulating_supply?.toLocaleString() }}
             </v-list-item-subtitle>
-          </v-list-item-content>
+          </div>
         </v-list-item>
       </v-list>
     </v-card>
