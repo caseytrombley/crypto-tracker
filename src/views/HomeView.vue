@@ -43,7 +43,9 @@ const goToPage = (page) => {
       <ul>
         <li v-for="coin in coins.slice((currentPage - 1) * 10, currentPage * 10)" :key="coin.id" class="border-b py-2">
           <div class="flex justify-between">
-            <span class="font-semibold">{{ coin.name }} ({{ coin.symbol.toUpperCase() }})</span>
+            <router-link :to="`/coin/${coin.id}`" class="font-semibold text-blue-500 hover:underline">
+              {{ coin.name }} ({{ coin.symbol.toUpperCase() }})
+            </router-link>
             <span>${{ coin.current_price.toLocaleString() }}</span>
           </div>
         </li>
@@ -51,12 +53,9 @@ const goToPage = (page) => {
 
       <!-- Pagination controls -->
       <div class="pagination">
-        <!-- Previous Button -->
         <v-btn @click="prevPage" :disabled="currentPage === 1" color="primary" class="prev" variant="text">
           Previous
         </v-btn>
-
-        <!-- Page Numbers -->
         <div class="page-numbers">
           <v-btn v-for="page in displayedPages" :key="page"
                  @click="goToPage(page)"
@@ -66,8 +65,6 @@ const goToPage = (page) => {
             {{ page }}
           </v-btn>
         </div>
-
-        <!-- Next Button -->
         <v-btn @click="nextPage" :disabled="currentPage === totalPages" color="primary" class="next" variant="text">
           Next
         </v-btn>
@@ -75,6 +72,7 @@ const goToPage = (page) => {
     </div>
   </v-container>
 </template>
+
 
 <style lang="scss" scoped>
 .pagination {

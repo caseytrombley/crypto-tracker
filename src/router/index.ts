@@ -1,5 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '@/views/HomeView.vue';
+import CoinDetailView from '@/views/CoinDetailView.vue';
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,6 +11,13 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
+    {
+      path: '/coin/:id',
+      name: 'CoinDetail',
+      component: CoinDetailView,
+      props: true
+    },
+
 
   ],
   scrollBehavior() {
