@@ -1,12 +1,9 @@
-import { createApp } from 'vue'
-//import { createVuetify, type ThemeDefinition } from 'vuetify'
-
+import { createVuetify } from 'vuetify'
 
 // Vuetify setup
-import 'vuetify/styles';
-import { createVuetify } from 'vuetify';
-import * as components from 'vuetify/components';
-import * as directives from 'vuetify/directives';
+import 'vuetify/styles'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
 
 // Import @mdi/js for Material Design SVG paths
 import { aliases, mdi } from 'vuetify/iconsets/mdi';
@@ -32,36 +29,16 @@ const vuetify = createVuetify({
   components,
   directives,
   theme: {
-    defaultTheme: 'dark', // Default to system theme
+    defaultTheme: 'light',
     themes: {
-      light: {
-        dark: false,
-        colors: {
-          background: '#f5f6f4',
-          //surface: '#F5F5F5',
-          surface: '#f5f6f1',
-          //primary: '#6200EE',
-          primary: '#54893e',
-          secondary: '#c2e272',
-          error: '#B00020',
-        },
-      },
-      dark: {
-        dark: true,
-        colors: {
-          background: '#121212',
-          surface: '#1E1E1E',
-          primary: '#54893e',
-          secondary: '#c2e272',
-          error: '#CF6679',
-        },
-      },
+      light: {},
+      dark: {},
     },
   },
   icons: {
-    defaultSet: 'mdi', // Default to SVG icons
-    aliases,          // Use the aliases provided by Vuetify
-    sets: { mdi },    // Connect the MDI set
+    defaultSet: 'mdi',
+    aliases,
+    sets: { mdi },
   },
   // icons: {
   //   defaultSet: 'mdiSvg',

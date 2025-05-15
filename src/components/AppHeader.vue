@@ -1,5 +1,5 @@
 <template>
-  <div class="app-header">
+  <div class="app-header" :class="theme.name.value === 'dark' ? 'bg-surface-variant' : 'bg-surface-light'">
     <v-container max-width="1200px" fluid class="app-header-container">
       <div class="app-title">
         <RouterLink style="text-decoration: none; color: inherit" to="/">
@@ -39,15 +39,26 @@
   </div>
 </template>
 <script setup lang="ts">
+import { useTheme } from 'vuetify'
 import Logo from '@/components/Logo.vue'
+
+const theme = useTheme()
 </script>
 
 <style lang="scss" scoped>
 .app-header {
   padding: 0.5rem 0 1rem;
   margin: 0 0 1rem;
-  background-color: var(--vt-c-divider-light-2);
 }
+
+.bg-surface-variant {
+  background-color: var(--vt-c-divider-light-2) !important;
+}
+
+.bg-surface-light {
+  background-color: var(--vt-c-white-mute) !important;
+}
+
 .app-header-container {
   display: block;
 }
