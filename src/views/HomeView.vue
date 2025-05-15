@@ -1,88 +1,84 @@
 <script setup lang="ts">
-import { computed, onMounted, nextTick, watch } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-import { useCryptoStore } from '@/stores/cryptoStore';
+import { computed, onMounted, nextTick, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { useCryptoStore } from '@/stores/cryptoStore'
+import CoinCard from '@/components/CoinCard.vue'
 
-const route = useRoute();
-const router = useRouter();
-const { 
-  coins, 
-  currentPage, 
-  totalPages, 
-  fetchCryptoData, 
-  updateChart,
-  setCurrentPage
-} = useCryptoStore();
+const route = useRoute()
+const router = useRouter()
+const { coins, currentPage, totalPages, fetchCryptoData, updateChart, setCurrentPage } =
+  useCryptoStore()
 
 // Sync URL with pagination
 const updateRoute = (page) => {
-  router.push({ 
-    query: { ...route.query, page: page > 1 ? page : undefined } 
-  });
-};
+  router.push({
+    query: { ...route.query, page: page > 1 ? page : undefined },
+  })
+}
 
 // Handle page changes
 const goToPage = (page) => {
   if (page >= 1 && page <= totalPages.value) {
-    setCurrentPage(page);
-    updateRoute(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setCurrentPage(page)
+    updateRoute(page)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
-};
+}
 
 // Handle next/prev page
 const handleNextPage = () => {
   if (currentPage.value < totalPages.value) {
-    const nextPage = currentPage.value + 1;
-    goToPage(nextPage);
+    const nextPage = currentPage.value + 1
+    goToPage(nextPage)
   }
-};
+}
 
 const handlePrevPage = () => {
   if (currentPage.value > 1) {
-    const prevPage = currentPage.value - 1;
-    goToPage(prevPage);
+    const prevPage = currentPage.value - 1
+    goToPage(prevPage)
   }
-};
+}
 
 // Initialize from URL on mount
 onMounted(async () => {
-  const pageFromUrl = parseInt(route.query.page) || 1;
+  const pageFromUrl = parseInt(route.query.page) || 1
   if (pageFromUrl !== currentPage.value) {
-    setCurrentPage(pageFromUrl);
+    setCurrentPage(pageFromUrl)
   }
-  
-  await fetchCryptoData();
+
+  await fetchCryptoData()
   // Ensure the chart is updated after data is loaded
   nextTick(() => {
-    updateChart();
-  });
-});
+    updateChart()
+  })
+})
 
 // Watch for URL changes
-watch(() => route.query.page, (newPage) => {
-  const page = parseInt(newPage) || 1;
-  if (page !== currentPage.value) {
-    setCurrentPage(page);
-    fetchCryptoData();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-});
+watch(
+  () => route.query.page,
+  (newPage) => {
+    const page = parseInt(newPage) || 1
+    if (page !== currentPage.value) {
+      setCurrentPage(page)
+      fetchCryptoData()
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  },
+)
 
 // Computed pagination numbers
 const displayedPages = computed(() => {
-  const maxPages = 5; // Show up to 5 pages
-  const start = Math.max(currentPage.value - Math.floor(maxPages / 2), 1);
-  const end = Math.min(start + maxPages - 1, totalPages.value);
+  const maxPages = 5 // Show up to 5 pages
+  const start = Math.max(currentPage.value - Math.floor(maxPages / 2), 1)
+  const end = Math.min(start + maxPages - 1, totalPages.value)
 
   if (end - start < maxPages - 1) {
-    start = Math.max(end - maxPages + 1, 1);
+    start = Math.max(end - maxPages + 1, 1)
   }
 
-  return Array.from({ length: end - start + 1 }, (_, i) => start + i);
-});
-
-
+  return Array.from({ length: end - start + 1 }, (_, i) => start + i)
+})
 </script>
 
 <template>
@@ -95,9 +91,16 @@ const displayedPages = computed(() => {
 
       <!-- Coin list display -->
       <ul>
-        <li v-for="coin in coins.slice((currentPage - 1) * 10, currentPage * 10)" :key="coin.id" class="border-b py-2">
+        <li
+          v-for="coin in coins.slice((currentPage - 1) * 10, currentPage * 10)"
+          :key="coin.id"
+          class="border-b py-2"
+        >
           <div class="flex justify-between">
-            <router-link :to="`/coin/${coin.id}`" class="font-semibold text-blue-500 hover:underline">
+            <router-link
+              :to="`/coin/${coin.id}`"
+              class="font-semibold text-blue-500 hover:underline"
+            >
               {{ coin.name }} ({{ coin.symbol.toUpperCase() }})
             </router-link>
             <span>${{ coin.current_price.toLocaleString() }}</span>
@@ -107,26 +110,46 @@ const displayedPages = computed(() => {
 
       <!-- Pagination controls -->
       <div class="pagination">
-        <v-btn @click="handlePrevPage" :disabled="currentPage === 1" color="primary" class="prev" variant="text">
+        <v-btn
+          @click="handlePrevPage"
+          :disabled="currentPage === 1"
+          color="primary"
+          class="prev"
+          variant="text"
+        >
           Previous
         </v-btn>
         <div class="page-numbers">
-          <v-btn v-for="page in displayedPages" :key="page"
-                 @click="goToPage(page)"
-                 :color="page === currentPage ? 'secondary' : 'primary'"
-                 :class="{'active-page': page === currentPage}"
-                 class="btn" variant="text">
+          <v-btn
+            v-for="page in displayedPages"
+            :key="page"
+            @click="goToPage(page)"
+            :color="page === currentPage ? 'secondary' : 'primary'"
+            :class="{ 'active-page': page === currentPage }"
+            class="btn"
+            variant="text"
+          >
             {{ page }}
           </v-btn>
         </div>
-        <v-btn @click="handleNextPage" :disabled="currentPage === totalPages" color="primary" class="next" variant="text">
+        <v-btn
+          @click="handleNextPage"
+          :disabled="currentPage === totalPages"
+          color="primary"
+          class="next"
+          variant="text"
+        >
           Next
         </v-btn>
       </div>
     </div>
+    <v-row class="mt-10 mb-10">
+      <v-col v-for="coin in coins" :key="coin.id" cols="12" sm="6" md="4" lg="3">
+        <CoinCard :coin="coin" />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
-
 
 <style lang="scss" scoped>
 .pagination {
