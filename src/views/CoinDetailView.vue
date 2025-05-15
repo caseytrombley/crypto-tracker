@@ -1,65 +1,305 @@
-<script setup>
-import { ref, onMounted, watch } from 'vue';
-import { useRoute } from 'vue-router';
+<script setup lang="ts">
+import { ref, onMounted, watch, nextTick } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 import axios from 'axios';
 import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
 const route = useRoute();
+const router = useRouter();
 const coin = ref(null);
 const chartInstance = ref(null);
 const loading = ref(true);
+const coinList = ref([]);
+const currentCoinIndex = ref(-1);
+
+// Cache for API responses
+const coinCache = ref(new Map());
+const coinListCache = ref(null);
+const lastCoinListFetch = ref(0);
+const lastCoinFetch = ref({});
+
+// Rate limiting constants
+const COIN_LIST_CACHE_TIME = 5 * 60 * 1000; // 5 minutes
+const COIN_CACHE_TIME = 1 * 60 * 1000; // 1 minute
+const MIN_REQUEST_INTERVAL = 1000; // 1 second between requests
+
+const fetchCoinList = async () => {
+  const now = Date.now();
+  
+  // Return cached data if it's still fresh
+  if (coinListCache.value && (now - lastCoinListFetch.value < COIN_LIST_CACHE_TIME)) {
+    coinList.value = coinListCache.value;
+    updateCurrentCoinIndex();
+    return;
+  }
+
+  try {
+    console.log('Fetching fresh coin list...');
+    const response = await axios.get('https://api.coingecko.com/api/v3/coins/markets', {
+      params: {
+        vs_currency: 'usd',
+        order: 'market_cap_desc',
+        per_page: 100,
+        page: 1,
+        sparkline: false
+      }
+    });
+    
+    // Update cache
+    coinListCache.value = response.data;
+    lastCoinListFetch.value = now;
+    coinList.value = response.data;
+    updateCurrentCoinIndex();
+  } catch (error) {
+    console.error('Error fetching coin list:', error);
+    // If we have cached data, use it even if it's stale
+    if (coinListCache.value) {
+      coinList.value = coinListCache.value;
+      updateCurrentCoinIndex();
+    }
+  }
+};
+
+const updateCurrentCoinIndex = () => {
+  if (!coin.value || !coinList.value.length) return;
+  currentCoinIndex.value = coinList.value.findIndex(c => c.id === coin.value.id);
+};
+
+const navigateToCoin = (direction) => {
+  if (!coinList.value.length || currentCoinIndex.value === -1) return;
+  
+  let newIndex;
+  if (direction === 'prev') {
+    newIndex = Math.max(0, currentCoinIndex.value - 1);
+  } else {
+    newIndex = Math.min(coinList.value.length - 1, currentCoinIndex.value + 1);
+  }
+  
+  if (newIndex !== currentCoinIndex.value) {
+    const nextCoin = coinList.value[newIndex];
+    router.push({ name: 'CoinDetail', params: { id: nextCoin.id } });
+  }
+};
 
 const fetchCoinData = async () => {
-  loading.value = true;
-  try {
-    const response = await axios.get(`https://api.coingecko.com/api/v3/coins/${route.params.id}`);
-    coin.value = response.data;
-    updateChart();
-  } catch (error) {
-    console.error('Error fetching coin data:', error);
+  const coinId = route.params.id;
+  const now = Date.now();
+  
+  // Check if we have this coin in cache and it's still fresh
+  if (coinCache.value.has(coinId)) {
+    const cached = coinCache.value.get(coinId);
+    if (now - cached.timestamp < COIN_CACHE_TIME) {
+      console.log('Using cached data for coin:', coinId);
+      coin.value = cached.data;
+      updateChart();
+      return;
+    }
   }
-  loading.value = false;
+
+  // Rate limiting: Don't make requests too frequently
+  if (lastCoinFetch.value[coinId] && (now - lastCoinFetch.value[coinId] < MIN_REQUEST_INTERVAL)) {
+    console.log('Rate limiting: Too soon to fetch data for', coinId);
+    return;
+  }
+
+  loading.value = true;
+  lastCoinFetch.value[coinId] = now;
+  
+  try {
+    console.log('Fetching data for coin ID:', coinId);
+    const response = await axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}`, {
+      params: {
+        localization: false,
+        tickers: false,
+        market_data: true,
+        community_data: false,
+        developer_data: false,
+        sparkline: true
+      }
+    });
+    
+    console.log('API Response for', coinId, ':', response.data);
+    
+    // Update cache
+    coinCache.value.set(coinId, {
+      data: response.data,
+      timestamp: now
+    });
+    
+    // Keep cache size reasonable
+    if (coinCache.value.size > 50) {
+      // Remove the oldest entry
+      const firstKey = coinCache.value.keys().next().value;
+      coinCache.value.delete(firstKey);
+    }
+    
+    coin.value = response.data;
+    
+    // Only fetch coin list if we don't have it yet or it's very old
+    if (!coinListCache.value || (now - lastCoinListFetch.value > COIN_LIST_CACHE_TIME)) {
+      await fetchCoinList();
+    } else {
+      updateCurrentCoinIndex();
+    }
+    
+    // Small delay to ensure DOM is ready
+    setTimeout(updateChart, 100);
+  } catch (error) {
+    console.error('Error fetching coin data for', coinId, ':', error);
+    
+    // If we have cached data, use it even if it's stale
+    if (coinCache.value.has(coinId)) {
+      console.log('Using stale cache due to error');
+      coin.value = coinCache.value.get(coinId).data;
+      updateChart();
+    }
+  } finally {
+    loading.value = false;
+  }
 };
 
 const updateChart = () => {
-  if (!coin.value || !coin.value.market_data) return;
-  const ctx = document.getElementById('coinChart');
-  if (!ctx) return;
+  console.log('updateChart called'); // Debug log
+  // Use nextTick to ensure the DOM is updated
+  nextTick(() => {
+    console.log('Next tick - checking data'); // Debug log
+    if (!coin.value?.market_data?.sparkline_7d?.price) {
+      console.error('No price data available in sparkline_7d.price');
+      console.log('Available market_data keys:', Object.keys(coin.value?.market_data || {}));
+      return;
+    }
+    
+    console.log('Price data found:', coin.value.market_data.sparkline_7d.price); // Debug log
+    const ctx = document.getElementById('coinChart');
+    console.log('Canvas element:', ctx); // Debug log
+    if (!ctx) {
+      console.error('Canvas element with id "coinChart" not found');
+      return;
+    }
+    if (!(ctx instanceof HTMLCanvasElement)) {
+      console.error('Element with id "coinChart" is not a canvas element');
+      return;
+    }
 
-  if (chartInstance.value) {
-    chartInstance.value.destroy();
-  }
+    // Destroy previous chart instance if it exists
+    if (chartInstance.value) {
+      chartInstance.value.destroy();
+    }
 
-  chartInstance.value = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: Array.from({ length: 7 }, (_, i) => `Day ${i + 1}`),
-      datasets: [
-        {
-          label: 'Price Trend (7 Days)',
-          data: coin.value.market_data.sparkline_7d.price,
-          borderColor: 'rgba(54, 162, 235, 1)',
-          backgroundColor: 'rgba(54, 162, 235, 0.2)',
-          fill: true,
-        },
-      ],
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: {
-        y: {
-          title: { display: true, text: 'Price (USD)' },
-        },
+    const prices = coin.value.market_data.sparkline_7d.price;
+    const dates = [];
+    const now = new Date();
+    
+    // Generate date labels for the last 7 days
+    for (let i = 6; i >= 0; i--) {
+      const date = new Date(now);
+      date.setDate(date.getDate() - i);
+      dates.push(date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }));
+    }
+
+    // Create gradient for the chart
+    const ctx2d = ctx.getContext('2d');
+    let gradient = null;
+    if (ctx2d) {
+      gradient = ctx2d.createLinearGradient(0, 0, 0, 400);
+      gradient.addColorStop(0, 'rgba(99, 102, 241, 0.4)');
+      gradient.addColorStop(1, 'rgba(99, 102, 241, 0.05)');
+    }
+
+    console.log('Creating new chart instance with data:', prices); // Debug log
+    
+    try {
+      // Create new chart instance
+      chartInstance.value = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: dates,
+        datasets: [{
+          label: 'Price (USD)',
+          data: prices,
+          borderColor: 'rgb(99, 102, 241)',
+          backgroundColor: gradient || 'rgba(99, 102, 241, 0.2)',
+          borderWidth: 2,
+          pointRadius: 0,
+          pointHoverRadius: 6,
+          tension: 0.4,
+          fill: true
+        }]
       },
-    },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            backgroundColor: 'rgba(17, 24, 39, 0.9)',
+            titleFont: { size: 14, weight: '500' },
+            bodyFont: { size: 14 },
+            padding: 12,
+            displayColors: false,
+            callbacks: {
+              label: (context) => `$${context.parsed.y.toLocaleString()}`
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: {
+              display: false,
+              drawBorder: false
+            },
+            ticks: {
+              color: '#9CA3AF',
+              font: {
+                size: 12
+              }
+            }
+          },
+          y: {
+            grid: {
+              color: 'rgba(156, 163, 175, 0.1)',
+              drawBorder: false
+            },
+            ticks: {
+              color: '#9CA3AF',
+              font: {
+                size: 12
+              },
+              callback: (value) => `$${value}`
+            }
+          }
+        }
+      }
+    });
+    console.log('Chart instance created:', chartInstance.value); // Debug log
+  } catch (error) {
+    console.error('Error creating chart:', error);
+  }
   });
 };
 
-onMounted(fetchCoinData);
-watch(() => route.params.id, fetchCoinData);
+onMounted(() => {
+  fetchCoinData();
+});
+
+// Use a debounced watch to prevent rapid fetches
+let fetchTimeout = null;
+watch(() => route.params.id, (newId, oldId) => {
+  if (newId !== oldId) {
+    if (fetchTimeout) clearTimeout(fetchTimeout);
+    fetchTimeout = setTimeout(() => {
+      fetchCoinData();
+    }, 300); // Small delay to handle rapid navigation
+  }
+});
 </script>
 
 <template>
@@ -171,8 +411,8 @@ watch(() => route.params.id, fetchCoinData);
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text class="pa-4">
-              <div style="height: 400px; width: 100%;">
-                <canvas id="coinChart"></canvas>
+              <div style="height: 400px; width: 100%; position: relative;">
+                <canvas id="coinChart" style="width: 100%; height: 100%;"></canvas>
               </div>
             </v-card-text>
           </v-card>
@@ -344,6 +584,30 @@ watch(() => route.params.id, fetchCoinData);
               </v-list-item>
             </v-list>
           </v-card>
+        </v-col>
+      </v-row>
+
+      <!-- Navigation Buttons -->
+      <v-row class="mt-6 mb-4" v-if="coinList.length > 0">
+        <v-col cols="12" class="d-flex justify-space-between">
+          <v-btn 
+            :disabled="currentCoinIndex <= 0"
+            @click="navigateToCoin('prev')"
+            color="primary"
+            variant="outlined"
+            prepend-icon="mdi-chevron-left"
+          >
+            Previous Coin
+          </v-btn>
+          <v-btn 
+            :disabled="currentCoinIndex >= coinList.length - 1"
+            @click="navigateToCoin('next')"
+            color="primary"
+            variant="outlined"
+            append-icon="mdi-chevron-right"
+          >
+            Next Coin
+          </v-btn>
         </v-col>
       </v-row>
     </v-container>

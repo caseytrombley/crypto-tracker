@@ -1,4 +1,4 @@
-import { ref, watch, nextTick, computed } from 'vue';
+import { ref, watch, computed } from 'vue';
 import axios from 'axios';
 import { Chart, registerables } from 'chart.js';
 
@@ -132,5 +132,6 @@ export const useCryptoStore = () => {
     prevPage,
     searchQuery,
     filteredCoins,
+    updateChart,
   };
 };

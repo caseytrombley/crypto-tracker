@@ -1,12 +1,24 @@
 <script setup>
-import { computed, onMounted } from 'vue';
+import { computed, onMounted, nextTick } from 'vue';
 import { useCryptoStore } from '@/stores/cryptoStore';
 
-const { coins, currentPage, totalPages, fetchCryptoData, nextPage, prevPage } = useCryptoStore();
+const { 
+  coins, 
+  currentPage, 
+  totalPages, 
+  fetchCryptoData, 
+  nextPage, 
+  prevPage,
+  updateChart
+} = useCryptoStore();
 
 // Fetch data on mount
-onMounted(() => {
-  fetchCryptoData();
+onMounted(async () => {
+  await fetchCryptoData();
+  // Ensure the chart is updated after data is loaded
+  nextTick(() => {
+    updateChart();
+  });
 });
 
 // Computed pagination numbers
