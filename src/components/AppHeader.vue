@@ -1,5 +1,8 @@
 <template>
-  <div class="app-header" :class="theme.name.value === 'dark' ? 'bg-surface-variant' : 'bg-surface-light'">
+  <div
+    class="app-header"
+    :class="theme.name.value === 'dark' ? 'bg-surface-variant' : 'bg-surface-light'"
+  >
     <v-container max-width="1200px" fluid class="app-header-container">
       <div class="app-title">
         <RouterLink style="text-decoration: none; color: inherit" to="/">
@@ -56,7 +59,7 @@ const theme = useTheme()
 }
 
 .bg-surface-light {
-  background-color: var(--vt-c-white-mute) !important;
+  background-color: var(--vt-c-white) !important;
 }
 
 .app-header-container {
