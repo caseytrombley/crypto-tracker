@@ -123,6 +123,11 @@ export const useCryptoStore = () => {
     }
   };
 
+  // Action to set current page
+  const setCurrentPage = (page) => {
+    currentPage.value = page;
+  };
+
   return {
     coins,
     currentPage,
@@ -133,5 +138,6 @@ export const useCryptoStore = () => {
     searchQuery,
     filteredCoins,
     updateChart,
+    setCurrentPage,
   };
 };

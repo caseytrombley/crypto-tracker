@@ -1,19 +1,57 @@
-<script setup>
-import { computed, onMounted, nextTick } from 'vue';
+<script setup lang="ts">
+import { computed, onMounted, nextTick, watch } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 import { useCryptoStore } from '@/stores/cryptoStore';
 
+const route = useRoute();
+const router = useRouter();
 const { 
   coins, 
   currentPage, 
   totalPages, 
   fetchCryptoData, 
-  nextPage, 
-  prevPage,
-  updateChart
+  updateChart,
+  setCurrentPage
 } = useCryptoStore();
 
-// Fetch data on mount
+// Sync URL with pagination
+const updateRoute = (page) => {
+  router.push({ 
+    query: { ...route.query, page: page > 1 ? page : undefined } 
+  });
+};
+
+// Handle page changes
+const goToPage = (page) => {
+  if (page >= 1 && page <= totalPages.value) {
+    setCurrentPage(page);
+    updateRoute(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+};
+
+// Handle next/prev page
+const handleNextPage = () => {
+  if (currentPage.value < totalPages.value) {
+    const nextPage = currentPage.value + 1;
+    goToPage(nextPage);
+  }
+};
+
+const handlePrevPage = () => {
+  if (currentPage.value > 1) {
+    const prevPage = currentPage.value - 1;
+    goToPage(prevPage);
+  }
+};
+
+// Initialize from URL on mount
 onMounted(async () => {
+  const pageFromUrl = parseInt(route.query.page) || 1;
+  if (pageFromUrl !== currentPage.value) {
+    setCurrentPage(pageFromUrl);
+  }
+  
   await fetchCryptoData();
   // Ensure the chart is updated after data is loaded
   nextTick(() => {
@@ -21,11 +59,21 @@ onMounted(async () => {
   });
 });
 
+// Watch for URL changes
+watch(() => route.query.page, (newPage) => {
+  const page = parseInt(newPage) || 1;
+  if (page !== currentPage.value) {
+    setCurrentPage(page);
+    fetchCryptoData();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+});
+
 // Computed pagination numbers
 const displayedPages = computed(() => {
   const maxPages = 5; // Show up to 5 pages
-  let start = Math.max(currentPage.value - Math.floor(maxPages / 2), 1);
-  let end = Math.min(start + maxPages - 1, totalPages.value);
+  const start = Math.max(currentPage.value - Math.floor(maxPages / 2), 1);
+  const end = Math.min(start + maxPages - 1, totalPages.value);
 
   if (end - start < maxPages - 1) {
     start = Math.max(end - maxPages + 1, 1);
@@ -34,13 +82,7 @@ const displayedPages = computed(() => {
   return Array.from({ length: end - start + 1 }, (_, i) => start + i);
 });
 
-// Function to go to a specific page
-const goToPage = (page) => {
-  if (page >= 1 && page <= totalPages.value) {
-    currentPage.value = page;
-    fetchCryptoData(); // Ensure data updates
-  }
-};
+
 </script>
 
 <template>
@@ -65,7 +107,7 @@ const goToPage = (page) => {
 
       <!-- Pagination controls -->
       <div class="pagination">
-        <v-btn @click="prevPage" :disabled="currentPage === 1" color="primary" class="prev" variant="text">
+        <v-btn @click="handlePrevPage" :disabled="currentPage === 1" color="primary" class="prev" variant="text">
           Previous
         </v-btn>
         <div class="page-numbers">
@@ -77,7 +119,7 @@ const goToPage = (page) => {
             {{ page }}
           </v-btn>
         </div>
-        <v-btn @click="nextPage" :disabled="currentPage === totalPages" color="primary" class="next" variant="text">
+        <v-btn @click="handleNextPage" :disabled="currentPage === totalPages" color="primary" class="next" variant="text">
           Next
         </v-btn>
       </div>
