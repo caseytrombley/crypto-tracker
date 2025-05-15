@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, watch, nextTick } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import axios from 'axios';
+import api from '@/utils/api';
 import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
@@ -37,7 +37,7 @@ const fetchCoinList = async () => {
 
   try {
     console.log('Fetching fresh coin list...');
-    const response = await axios.get('https://api.coingecko.com/api/v3/coins/markets', {
+    const response = await api.get('/coins/markets', {
       params: {
         vs_currency: 'usd',
         order: 'market_cap_desc',
@@ -109,7 +109,7 @@ const fetchCoinData = async () => {
   
   try {
     console.log('Fetching data for coin ID:', coinId);
-    const response = await axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}`, {
+    const response = await api.get(`/coins/${coinId}`, {
       params: {
         localization: false,
         tickers: false,
