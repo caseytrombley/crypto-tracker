@@ -2,12 +2,11 @@
   <div class="app-header">
     <v-container max-width="1200px" fluid class="app-header-container">
       <div class="app-title">
-        <RouterLink style="text-decoration: none; color: inherit;" to="/">
+        <RouterLink style="text-decoration: none; color: inherit" to="/">
           <Logo />
         </RouterLink>
       </div>
       <!--        <div class="app-header-controls right-div">-->
-
 
       <!--          &lt;!&ndash; Theme switcher &ndash;&gt;-->
       <!--          <v-menu offset-y max-width="300px">-->
@@ -40,14 +39,17 @@
   </div>
 </template>
 <script setup lang="ts">
-import Logo from "@/components/Logo.vue";
+import Logo from '@/components/Logo.vue'
 </script>
 
-
 <style lang="scss" scoped>
+.app-header {
+  padding: 0.5rem 0 1rem;
+  margin: 0 0 1rem;
+  background-color: var(--vt-c-divider-light-2);
+}
 .app-header-container {
   display: block;
-
 }
 @media (min-width: 768px) {
   .app-header-container {
@@ -61,9 +63,8 @@ import Logo from "@/components/Logo.vue";
   margin: 0 auto;
   width: fit-content;
   text-align: center;
-  padding: 0 0 1rem;
+  //padding: 0 0 1rem;
 }
-
 
 .right-div {
   display: flex;
@@ -99,9 +100,7 @@ import Logo from "@/components/Logo.vue";
 }
 
 .search-auto-item {
-
   align-self: initial;
   text-align: left;
 }
-
 </style>
