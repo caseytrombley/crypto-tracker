@@ -318,7 +318,7 @@ watch(
 
     <v-container v-else max-width="1200px" class="pa-0" fluid>
       <!-- Header Section -->
-      <v-card class="mb-6 rounded-lg" elevation="2">
+      <v-card class="mb-6 rounded-lg" variant="flat">
         <v-card-text class="pa-6">
           <v-row align="center" justify="center" class="text-center">
             <v-col cols="12" md="auto" class="d-flex justify-center">
@@ -342,7 +342,7 @@ watch(
       <!-- Price Cards -->
       <v-row class="mb-6">
         <v-col cols="12" md="6" lg="3">
-          <v-card class="h-100 rounded-lg" elevation="2">
+          <v-card class="h-100 rounded-lg" variant="flat">
             <v-card-text class="text-center pa-4">
               <div class="text-subtitle-1 grey--text">Current Price</div>
               <div class="text-h4 font-weight-bold primary--text mt-2">
@@ -356,7 +356,7 @@ watch(
         </v-col>
 
         <v-col cols="12" md="6" lg="3">
-          <v-card class="h-100 rounded-lg" elevation="2">
+          <v-card class="h-100 rounded-lg" variant="flat">
             <v-card-text class="text-center pa-4">
               <div class="text-subtitle-1 grey--text">24h Change</div>
               <div
@@ -392,7 +392,7 @@ watch(
         </v-col>
 
         <v-col cols="12" md="6" lg="3">
-          <v-card class="h-100 rounded-lg" elevation="2">
+          <v-card class="h-100 rounded-lg" variant="flat">
             <v-card-text class="text-center pa-4">
               <div class="text-subtitle-1 grey--text">Market Cap</div>
               <div class="text-h5 font-weight-bold mt-2">
@@ -406,7 +406,7 @@ watch(
         </v-col>
 
         <v-col cols="12" md="6" lg="3">
-          <v-card class="h-100 rounded-lg" elevation="2">
+          <v-card class="h-100 rounded-lg" variant="flat">
             <v-card-text class="text-center pa-4">
               <div class="text-subtitle-1 grey--text">Volume (24h)</div>
               <div class="text-h5 font-weight-bold mt-2">
@@ -428,7 +428,7 @@ watch(
       <!-- Chart Section -->
       <v-row class="mb-6">
         <v-col cols="12">
-          <v-card class="rounded-lg" elevation="2">
+          <v-card class="rounded-lg" variant="flat">
             <v-card-title class="text-h6 font-weight-bold pa-4">
               <v-icon left>mdi-chart-line</v-icon>
               Price Performance (7 Days)
@@ -446,7 +446,7 @@ watch(
       <!-- Stats Section -->
       <v-row>
         <v-col cols="12" md="6">
-          <v-card class="rounded-lg mb-4" elevation="2">
+          <v-card class="rounded-lg mb-4" variant="flat">
             <v-card-title class="text-h6 font-weight-bold pa-4">
               <v-icon left>mdi-chart-bar</v-icon>
               Market Stats
@@ -548,7 +548,7 @@ watch(
         </v-col>
 
         <v-col cols="12" md="6">
-          <v-card class="rounded-lg" elevation="2">
+          <v-card class="rounded-lg" variant="flat">
             <v-card-title class="text-h6 font-weight-bold pa-4">
               <v-icon left>mdi-information</v-icon>
               Additional Information
@@ -677,10 +677,6 @@ watch(
     box-shadow 0.2s ease-in-out;
 }
 
-.v-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1) !important;
-}
 
 .chart-container {
   position: relative;
