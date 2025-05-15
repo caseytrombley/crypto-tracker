@@ -1,4 +1,4 @@
-import { ref, watch, nextTick } from 'vue';
+import { ref, watch, nextTick, computed } from 'vue';
 import axios from 'axios';
 import { Chart, registerables } from 'chart.js';
 
@@ -9,6 +9,14 @@ export const useCryptoStore = () => {
   const currentPage = ref(1);
   const totalPages = ref(10);
   let chartInstance = null;
+  const searchQuery = ref('');
+
+  // Filtered coins based on search query
+  const filteredCoins = computed(() => {
+    return coins.value.filter(coin =>
+      coin.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+    );
+  });
 
   const fetchCryptoData = async () => {
     try {
@@ -96,9 +104,7 @@ export const useCryptoStore = () => {
         },
       },
     });
-
   };
-
 
   // Watch for page changes and update the chart
   watch(currentPage, () => {
@@ -124,5 +130,7 @@ export const useCryptoStore = () => {
     fetchCryptoData,
     nextPage,
     prevPage,
+    searchQuery,
+    filteredCoins,
   };
 };

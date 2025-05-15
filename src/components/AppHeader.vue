@@ -6,7 +6,36 @@
           <Logo />
         </RouterLink>
       </div>
+      <!--        <div class="app-header-controls right-div">-->
 
+
+      <!--          &lt;!&ndash; Theme switcher &ndash;&gt;-->
+      <!--          <v-menu offset-y max-width="300px">-->
+      <!--            <template #activator="{ props }">-->
+      <!--              <v-btn icon v-bind="props" elevation="0" variant="plain">-->
+      <!--                <v-icon :icon="currentThemeIcon"></v-icon>-->
+      <!--                <v-tooltip activator="parent" location="end">-->
+      <!--                  <template #default>-->
+      <!--                    <span>{{ themeLabels[currentTheme] }}</span>-->
+      <!--                  </template>-->
+      <!--                </v-tooltip>-->
+      <!--              </v-btn>-->
+      <!--            </template>-->
+      <!--            <v-list>-->
+      <!--              <v-list-item-->
+      <!--                v-for="theme in themes"-->
+      <!--                :key="theme"-->
+      <!--                @click="setTheme(theme)"-->
+      <!--                :class="[{ 'v-list-item&#45;&#45;active': currentTheme === theme }, 'd-flex']"-->
+      <!--              >-->
+      <!--                <v-list-item-title>-->
+      <!--                  <v-icon :icon="themeIcons[theme]" class="me-3"></v-icon>-->
+      <!--                  {{ themeLabels[theme] }}-->
+      <!--                </v-list-item-title>-->
+      <!--              </v-list-item>-->
+      <!--            </v-list>-->
+      <!--          </v-menu>-->
+      <!--        </div>-->
     </v-container>
   </div>
 </template>
