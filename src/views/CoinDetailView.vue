@@ -36,7 +36,6 @@ const fetchCoinList = async () => {
   }
 
   try {
-    console.log('Fetching fresh coin list...')
     const response = await api.get('/coins/markets', {
       params: {
         vs_currency: 'usd',
@@ -91,7 +90,6 @@ const fetchCoinData = async () => {
   if (coinCache.value.has(coinId)) {
     const cached = coinCache.value.get(coinId)
     if (now - cached.timestamp < COIN_CACHE_TIME) {
-      console.log('Using cached data for coin:', coinId)
       coin.value = cached.data
       updateChart()
       return
@@ -100,7 +98,6 @@ const fetchCoinData = async () => {
 
   // Rate limiting: Don't make requests too frequently
   if (lastCoinFetch.value[coinId] && now - lastCoinFetch.value[coinId] < MIN_REQUEST_INTERVAL) {
-    console.log('Rate limiting: Too soon to fetch data for', coinId)
     return
   }
 
@@ -108,7 +105,6 @@ const fetchCoinData = async () => {
   lastCoinFetch.value[coinId] = now
 
   try {
-    console.log('Fetching data for coin ID:', coinId)
     const response = await api.get(`/coins/${coinId}`, {
       params: {
         localization: false,
@@ -119,8 +115,6 @@ const fetchCoinData = async () => {
         sparkline: true,
       },
     })
-
-    console.log('API Response for', coinId, ':', response.data)
 
     // Update cache
     coinCache.value.set(coinId, {
@@ -151,7 +145,6 @@ const fetchCoinData = async () => {
 
     // If we have cached data, use it even if it's stale
     if (coinCache.value.has(coinId)) {
-      console.log('Using stale cache due to error')
       coin.value = coinCache.value.get(coinId).data
       updateChart()
     }
@@ -161,19 +154,14 @@ const fetchCoinData = async () => {
 }
 
 const updateChart = () => {
-  console.log('updateChart called') // Debug log
   // Use nextTick to ensure the DOM is updated
   nextTick(() => {
-    console.log('Next tick - checking data') // Debug log
     if (!coin.value?.market_data?.sparkline_7d?.price) {
       console.error('No price data available in sparkline_7d.price')
-      console.log('Available market_data keys:', Object.keys(coin.value?.market_data || {}))
       return
     }
 
-    console.log('Price data found:', coin.value.market_data.sparkline_7d.price) // Debug log
     const ctx = document.getElementById('coinChart')
-    console.log('Canvas element:', ctx) // Debug log
     if (!ctx) {
       console.error('Canvas element with id "coinChart" not found')
       return
@@ -207,8 +195,6 @@ const updateChart = () => {
       gradient.addColorStop(0, 'rgba(99, 102, 241, 0.4)')
       gradient.addColorStop(1, 'rgba(99, 102, 241, 0.05)')
     }
-
-    console.log('Creating new chart instance with data:', prices) // Debug log
 
     try {
       // Create new chart instance
@@ -281,7 +267,6 @@ const updateChart = () => {
           },
         },
       })
-      console.log('Chart instance created:', chartInstance.value) // Debug log
     } catch (error) {
       console.error('Error creating chart:', error)
     }
