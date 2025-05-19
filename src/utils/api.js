@@ -1,5 +1,10 @@
 import axios from 'axios';
 
+// Rate limiting constants
+const COINGECKO_RATE_LIMIT = 1000; // 1 second between requests
+const MAX_RETRIES = 3;
+const RETRY_DELAY = 1000; // 1 second delay between retries
+
 // Create axios instance with base URL
 const api = axios.create({
   baseURL: import.meta.env.DEV 
@@ -9,13 +14,30 @@ const api = axios.create({
   headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
+    'X-CoinGecko-Source': 'CryptoTracker' // Optional: Identify your application
   },
 });
 
-// Add a request interceptor to add params
+// Last request timestamp tracking
+let lastRequestTime = 0;
+
+// Request interceptor for rate limiting
 api.interceptors.request.use(
   (config) => {
-    // Add any common parameters or headers here
+    const now = Date.now();
+    const timeSinceLastRequest = now - lastRequestTime;
+    
+    if (timeSinceLastRequest < COINGECKO_RATE_LIMIT) {
+      // Wait for rate limit to reset
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          lastRequestTime = Date.now();
+          resolve(config);
+        }, COINGECKO_RATE_LIMIT - timeSinceLastRequest);
+      });
+    }
+    
+    lastRequestTime = now;
     return config;
   },
   (error) => {
@@ -23,24 +45,44 @@ api.interceptors.request.use(
   }
 );
 
-// Add a response interceptor to handle errors
+// Response interceptor with retry logic
 api.interceptors.response.use(
   (response) => response,
-  (error) => {
-    if (error.response) {
-      // The request was made and the server responded with a status code
-      // that falls out of the range of 2xx
-      console.error('API Error Response:', error.response.data);
-      console.error('Status:', error.response.status);
-      console.error('Headers:', error.response.headers);
-    } else if (error.request) {
-      // The request was made but no response was received
-      console.error('API Request Error:', error.request);
-    } else {
-      // Something happened in setting up the request that triggered an Error
-      console.error('API Error:', error.message);
+  async (error) => {
+    const { response, config } = error;
+    
+    if (response) {
+      // Handle rate limit errors
+      if (response.status === 429) {
+        if (!config.__retryCount) {
+          config.__retryCount = 0;
+        }
+        
+        if (config.__retryCount < MAX_RETRIES) {
+          config.__retryCount++;
+          
+          // Wait for rate limit reset
+          await new Promise(resolve => setTimeout(resolve, RETRY_DELAY * config.__retryCount));
+          
+          return api(config);
+        }
+      }
     }
-    return Promise.reject(error);
+
+    // For CORS errors in development
+    if (error.request && import.meta.env.DEV) {
+      console.warn('CORS Error: Using local proxy for development');
+      // In development, we can use a proxy to bypass CORS
+      config.baseURL = '/api'; // Proxy configured in vite.config.js
+      return api(config);
+    }
+
+    // For other errors, throw with more descriptive message
+    const errorMessage = response 
+      ? `API Error ${response.status}: ${response.statusText}` 
+      : `Network Error: ${error.message}`;
+    
+    throw new Error(errorMessage);
   }
 );
 

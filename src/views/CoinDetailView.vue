@@ -315,7 +315,7 @@ watch(
                   {{ coin.name }}
                   <span class="text-h6 grey--text">({{ coin.symbol.toUpperCase() }})</span>
                 </h1>
-                <v-chip color="primary" small class="mt-1">
+                <v-chip density="compact" size="small" color="primary" class="mt-1">
                   Rank #{{ coin.market_cap_rank }}
                 </v-chip>
               </div>
@@ -344,28 +344,29 @@ watch(
           <v-card class="h-100 rounded-lg" variant="flat">
             <v-card-text class="text-center pa-4">
               <div class="text-subtitle-1 grey--text">24h Change</div>
-              <div
-                :class="[
-                  'text-h4',
-                  'font-weight-bold',
-                  'mt-2',
-                  coin.market_data.price_change_percentage_24h > 0
-                    ? 'success--text'
-                    : 'error--text',
-                ]"
-              >
-                {{ coin.market_data.price_change_percentage_24h > 0 ? '+' : ''
-                }}{{ coin.market_data.price_change_percentage_24h.toFixed(2) }}%
-                <v-icon
-                  :color="coin.market_data.price_change_percentage_24h > 0 ? 'success' : 'error'"
-                >
-                  {{
-                    coin.market_data.price_change_percentage_24h > 0
-                      ? 'mdi-arrow-up'
-                      : 'mdi-arrow-down'
-                  }}
-                </v-icon>
-              </div>
+               <div
+                 :class="[
+                   'text-h4',
+                   'font-weight-bold',
+                   'mt-2',
+                   coin.market_data.price_change_percentage_24h > 0
+                     ? 'success--text'
+                     : 'error--text',
+                 ]"
+               >
+                 {{ coin.market_data.price_change_percentage_24h > 0 ? '+' : ''
+                 }}{{ coin.market_data.price_change_percentage_24h.toFixed(2) }}%
+                 <v-icon
+                   :color="coin.market_data.price_change_percentage_24h > 0 ? 'success' : 'error'"
+                   size="24"
+                 >
+                   {{
+                     coin.market_data.price_change_percentage_24h > 0
+                       ? 'mdi-arrow-up'
+                       : 'mdi-arrow-down'
+                   }}
+                 </v-icon>
+               </div>
               <div class="text-caption grey--text mt-1">
                 24h High: ${{ coin.market_data.high_24h?.usd?.toLocaleString() || 'N/A' }}
               </div>
@@ -437,58 +438,50 @@ watch(
               Market Stats
             </v-card-title>
             <v-divider></v-divider>
-            <v-list dense class="pa-0">
+            <v-list density="compact" class="pa-0">
               <v-list-item class="px-4 py-3">
-                <v-list-item-content>
-                  <v-list-item-title>Market Cap Rank</v-list-item-title>
-                </v-list-item-content>
-                <v-list-item-action-text class="font-weight-bold">
+                <v-list-item-title>Market Cap Rank</v-list-item-title>
+                <v-list-item-subtitle class="font-weight-bold">
                   #{{ coin.market_cap_rank }}
-                </v-list-item-action-text>
+                </v-list-item-subtitle>
               </v-list-item>
 
               <v-divider></v-divider>
 
               <v-list-item class="px-4 py-3">
-                <v-list-item-content>
-                  <v-list-item-title>Circulating Supply</v-list-item-title>
-                  <v-list-item-subtitle>
-                    {{ (coin.market_data.circulating_supply / 1000000).toFixed(2) }}M
-                    {{ coin.symbol.toUpperCase() }}
-                  </v-list-item-subtitle>
-                </v-list-item-content>
-                <v-list-item-action-text class="font-weight-bold">
+                <v-list-item-title>Circulating Supply</v-list-item-title>
+                <v-list-item-subtitle>
+                  {{ (coin.market_data.circulating_supply / 1000000).toFixed(2) }}M
+                  {{ coin.symbol.toUpperCase() }}
+                </v-list-item-subtitle>
+                <v-list-item-subtitle class="font-weight-bold">
                   {{
                     (
                       (coin.market_data.circulating_supply / coin.market_data.total_supply) *
                       100
                     ).toFixed(2) || 0
                   }}% of Total
-                </v-list-item-action-text>
+                </v-list-item-subtitle>
               </v-list-item>
 
               <v-divider></v-divider>
 
               <v-list-item class="px-4 py-3">
-                <v-list-item-content>
-                  <v-list-item-title>Total Supply</v-list-item-title>
-                </v-list-item-content>
-                <v-list-item-action-text class="font-weight-bold">
+                <v-list-item-title>Total Supply</v-list-item-title>
+                <v-list-item-subtitle class="font-weight-bold">
                   {{ (coin.market_data.total_supply / 1000000).toFixed(2) || '∞' }}M
                   {{ coin.symbol.toUpperCase() }}
-                </v-list-item-action-text>
+                </v-list-item-subtitle>
               </v-list-item>
 
               <v-divider></v-divider>
 
               <v-list-item class="px-4 py-3">
-                <v-list-item-content>
-                  <v-list-item-title>All-Time High</v-list-item-title>
-                  <v-list-item-subtitle>
-                    {{ new Date(coin.market_data.ath_date.usd).toLocaleDateString() }}
-                  </v-list-item-subtitle>
-                </v-list-item-content>
-                <v-list-item-action-text class="font-weight-bold">
+                <v-list-item-title>All-Time High</v-list-item-title>
+                <v-list-item-subtitle>
+                  {{ new Date(coin.market_data.ath_date.usd).toLocaleDateString() }}
+                </v-list-item-subtitle>
+                <v-list-item-subtitle class="font-weight-bold">
                   ${{ coin.market_data.ath.usd.toLocaleString() }}
                   <div
                     :class="[
@@ -501,19 +494,17 @@ watch(
                     {{ coin.market_data.ath_change_percentage.usd > 0 ? '+' : ''
                     }}{{ coin.market_data.ath_change_percentage.usd.toFixed(2) }}%
                   </div>
-                </v-list-item-action-text>
+                </v-list-item-subtitle>
               </v-list-item>
 
               <v-divider></v-divider>
 
               <v-list-item class="px-4 py-3">
-                <v-list-item-content>
-                  <v-list-item-title>All-Time Low</v-list-item-title>
-                  <v-list-item-subtitle>
-                    {{ new Date(coin.market_data.atl_date.usd).toLocaleDateString() }}
-                  </v-list-item-subtitle>
-                </v-list-item-content>
-                <v-list-item-action-text class="font-weight-bold">
+                <v-list-item-title>All-Time Low</v-list-item-title>
+                <v-list-item-subtitle>
+                  {{ new Date(coin.market_data.atl_date.usd).toLocaleDateString() }}
+                </v-list-item-subtitle>
+                <v-list-item-subtitle class="font-weight-bold">
                   ${{ coin.market_data.atl.usd.toLocaleString() }}
                   <div
                     :class="[
@@ -526,7 +517,7 @@ watch(
                     {{ coin.market_data.atl_change_percentage.usd > 0 ? '+' : ''
                     }}{{ coin.market_data.atl_change_percentage.usd.toFixed(2) }}%
                   </div>
-                </v-list-item-action-text>
+                </v-list-item-subtitle>
               </v-list-item>
             </v-list>
           </v-card>
@@ -539,34 +530,28 @@ watch(
               Additional Information
             </v-card-title>
             <v-divider></v-divider>
-            <v-list dense class="pa-0">
+            <v-list density="compact" class="pa-0">
               <v-list-item class="px-4 py-3">
-                <v-list-item-content>
-                  <v-list-item-title>24h Trading Volume</v-list-item-title>
-                </v-list-item-content>
-                <v-list-item-action-text class="font-weight-bold">
+                <v-list-item-title>24h Trading Volume</v-list-item-title>
+                <v-list-item-subtitle class="font-weight-bold">
                   ${{ coin.market_data.total_volume?.usd?.toLocaleString() || 'N/A' }}
-                </v-list-item-action-text>
+                </v-list-item-subtitle>
               </v-list-item>
 
               <v-divider></v-divider>
 
               <v-list-item class="px-4 py-3">
-                <v-list-item-content>
-                  <v-list-item-title>Fully Diluted Valuation</v-list-item-title>
-                </v-list-item-content>
-                <v-list-item-action-text class="font-weight-bold">
+                <v-list-item-title>Fully Diluted Valuation</v-list-item-title>
+                <v-list-item-subtitle class="font-weight-bold">
                   ${{ coin.market_data.fully_diluted_valuation?.usd?.toLocaleString() || 'N/A' }}
-                </v-list-item-action-text>
+                </v-list-item-subtitle>
               </v-list-item>
 
               <v-divider></v-divider>
 
               <v-list-item class="px-4 py-3">
-                <v-list-item-content>
-                  <v-list-item-title>Max Supply</v-list-item-title>
-                </v-list-item-content>
-                <v-list-item-action-text class="font-weight-bold">
+                <v-list-item-title>Max Supply</v-list-item-title>
+                <v-list-item-subtitle class="font-weight-bold">
                   {{
                     coin.market_data.max_supply
                       ? (coin.market_data.max_supply / 1000000).toFixed(2) +
@@ -574,50 +559,51 @@ watch(
                         coin.symbol.toUpperCase()
                       : '∞'
                   }}
-                </v-list-item-action-text>
+                </v-list-item-subtitle>
               </v-list-item>
 
               <v-divider></v-divider>
 
               <v-list-item class="px-4 py-3">
-                <v-list-item-content>
-                  <v-list-item-title>Official Links</v-list-item-title>
-                </v-list-item-content>
-                <v-list-item-action>
+                <v-list-item-title>Official Links</v-list-item-title>
+                <v-list-item-subtitle>
                   <v-btn
                     v-if="coin.links?.homepage?.[0]"
                     :href="coin.links.homepage[0]"
                     target="_blank"
                     icon
-                    small
+                    density="compact"
+                    size="small"
                     class="mr-2"
                     color="primary"
                   >
-                    <v-icon>mdi-web</v-icon>
+                    <v-icon size="20">mdi-web</v-icon>
                   </v-btn>
                   <v-btn
                     v-if="coin.links?.blockchain_site?.[0]"
                     :href="coin.links.blockchain_site[0]"
                     target="_blank"
                     icon
-                    small
+                    density="compact"
+                    size="small"
                     class="mr-2"
                     color="primary"
                   >
-                    <v-icon>mdi-link</v-icon>
+                    <v-icon size="20">mdi-link</v-icon>
                   </v-btn>
                   <v-btn
                     v-if="coin.links?.repos_url?.github?.[0]"
                     :href="coin.links.repos_url.github[0]"
                     target="_blank"
                     icon
-                    small
+                    density="compact"
+                    size="small"
                     class="mr-2"
                     color="primary"
                   >
-                    <v-icon>mdi-github</v-icon>
+                    <v-icon size="20">mdi-github</v-icon>
                   </v-btn>
-                </v-list-item-action>
+                </v-list-item-subtitle>
               </v-list-item>
             </v-list>
           </v-card>
