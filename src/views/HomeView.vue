@@ -26,7 +26,6 @@ const paginatedCoins = computed(() => {
 
 const renderChart = async () => {
   await nextTick();
-
   const canvas = canvasRef.value;
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
@@ -79,6 +78,7 @@ const loadPage = async (page: number) => {
     if (!coins.value?.length) {
       localError.value = error.value || 'No coin data available';
     } else {
+      await nextTick();
       await renderChart();
     }
   } catch (err) {
@@ -91,14 +91,12 @@ const loadPage = async (page: number) => {
 
 onMounted(async () => {
   const pageFromUrl = parseInt(route.query.page as string) || 1;
-  setCurrentPage(pageFromUrl);
   await loadPage(pageFromUrl);
 });
 
 watch(() => route.query.page, async (newPage) => {
   const page = parseInt(newPage as string) || 1;
   if (page !== currentPage.value) {
-    setCurrentPage(page);
     await loadPage(page);
   }
 });
@@ -110,10 +108,11 @@ const goToPage = (page: number) => {
   }
 };
 
+const handleFirstPage = () => goToPage(1);
+const handleLastPage = () => goToPage(totalPages.value);
 const handleNextPage = () => {
   if (currentPage.value < totalPages.value) goToPage(currentPage.value + 1);
 };
-
 const handlePrevPage = () => {
   if (currentPage.value > 1) goToPage(currentPage.value - 1);
 };
@@ -170,6 +169,14 @@ const displayedPages = computed(() => {
 
       <div class="pagination">
         <v-btn
+          @click="handleFirstPage"
+          :disabled="currentPage === 1"
+          color="primary"
+          variant="text"
+        >
+          First
+        </v-btn>
+        <v-btn
           @click="handlePrevPage"
           :disabled="currentPage === 1"
           color="primary"
@@ -197,10 +204,17 @@ const displayedPages = computed(() => {
         >
           Next
         </v-btn>
+        <v-btn
+          @click="handleLastPage"
+          :disabled="currentPage === totalPages"
+          color="primary"
+          variant="text"
+        >
+          Last
+        </v-btn>
       </div>
     </div>
 
-    <!-- ✅ Full list of CoinCards (always visible) -->
     <v-row v-if="!loading && !localError" class="mt-10 mb-10">
       <v-col
         v-for="coin in coins"
