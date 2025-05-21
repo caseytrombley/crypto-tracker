@@ -1,84 +1,129 @@
 <script setup lang="ts">
-import { computed, onMounted, nextTick, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import { useCryptoStore } from '@/stores/cryptoStore'
-import CoinCard from '@/components/CoinCard.vue'
+import { computed, onMounted, watch, ref, nextTick } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+import { useCryptoStore } from '@/stores/cryptoStore';
+import { storeToRefs } from 'pinia';
+import CoinCard from '@/components/CoinCard.vue';
+import { Chart, registerables } from 'chart.js';
 
-const route = useRoute()
-const router = useRouter()
-const { coins, currentPage, totalPages, fetchCryptoData, updateChart, setCurrentPage } =
-  useCryptoStore()
+Chart.register(...registerables);
 
-// Sync URL with pagination
-const updateRoute = (page) => {
-  router.push({
-    query: { ...route.query, page: page > 1 ? page : undefined },
-  })
-}
+const route = useRoute();
+const router = useRouter();
+const { coins, currentPage, totalPages, error } = storeToRefs(useCryptoStore());
+const { fetchCryptoData, setCurrentPage } = useCryptoStore();
+const loading = ref(true);
+const localError = ref<string | null>(null);
 
-// Handle page changes
-const goToPage = (page) => {
+const chartInstance = ref<Chart | null>(null);
+const canvasRef = ref<HTMLCanvasElement | null>(null);
+
+const paginatedCoins = computed(() => {
+  const start = (currentPage.value - 1) * 10;
+  const end = currentPage.value * 10;
+  return coins.value.slice(start, end);
+});
+
+const renderChart = async () => {
+  await nextTick();
+
+  const canvas = canvasRef.value;
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  if (chartInstance.value) {
+    chartInstance.value.destroy();
+  }
+
+  const labels = paginatedCoins.value.map((coin) => coin.symbol.toUpperCase());
+  const data = paginatedCoins.value.map((coin) => coin.market_cap || 0);
+
+  chartInstance.value = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Market Cap (USD)',
+          data,
+          backgroundColor: 'rgba(99, 102, 241, 0.4)',
+          borderColor: 'rgb(99, 102, 241)',
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: true, position: 'top' },
+      },
+      scales: {
+        x: { ticks: { maxRotation: 45, minRotation: 45 } },
+        y: {
+          ticks: {
+            callback: (value: number) => `$${value.toLocaleString()}`,
+          },
+        },
+      },
+    },
+  });
+};
+
+const loadPage = async (page: number) => {
+  loading.value = true;
+  try {
+    setCurrentPage(page);
+    await fetchCryptoData();
+    if (!coins.value?.length) {
+      localError.value = error.value || 'No coin data available';
+    } else {
+      await renderChart();
+    }
+  } catch (err) {
+    console.error('Error loading data:', err);
+    localError.value = 'Failed to load coin data';
+  } finally {
+    loading.value = false;
+  }
+};
+
+onMounted(async () => {
+  const pageFromUrl = parseInt(route.query.page as string) || 1;
+  setCurrentPage(pageFromUrl);
+  await loadPage(pageFromUrl);
+});
+
+watch(() => route.query.page, async (newPage) => {
+  const page = parseInt(newPage as string) || 1;
+  if (page !== currentPage.value) {
+    setCurrentPage(page);
+    await loadPage(page);
+  }
+});
+
+const goToPage = (page: number) => {
   if (page >= 1 && page <= totalPages.value) {
-    setCurrentPage(page)
-    updateRoute(page)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    router.push({ query: { ...route.query, page: page > 1 ? page : undefined } });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-}
+};
 
-// Handle next/prev page
 const handleNextPage = () => {
-  if (currentPage.value < totalPages.value) {
-    const nextPage = currentPage.value + 1
-    goToPage(nextPage)
-  }
-}
+  if (currentPage.value < totalPages.value) goToPage(currentPage.value + 1);
+};
 
 const handlePrevPage = () => {
-  if (currentPage.value > 1) {
-    const prevPage = currentPage.value - 1
-    goToPage(prevPage)
-  }
-}
+  if (currentPage.value > 1) goToPage(currentPage.value - 1);
+};
 
-// Initialize from URL on mount
-onMounted(async () => {
-  const pageFromUrl = parseInt(route.query.page) || 1
-  if (pageFromUrl !== currentPage.value) {
-    setCurrentPage(pageFromUrl)
-  }
-
-  await fetchCryptoData()
-  // Ensure the chart is updated after data is loaded
-  nextTick(() => {
-    updateChart()
-  })
-})
-
-// Watch for URL changes
-watch(
-  () => route.query.page,
-  (newPage) => {
-    const page = parseInt(newPage) || 1
-    if (page !== currentPage.value) {
-      setCurrentPage(page)
-      fetchCryptoData()
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
-  },
-)
-
-// Computed pagination numbers
 const displayedPages = computed(() => {
-  const maxPages = 5 // Show up to 5 pages
-  const start = Math.max(currentPage.value - Math.floor(maxPages / 2), 1)
-  const end = Math.min(start + maxPages - 1, totalPages.value)
-
-  if (end - start < maxPages - 1) {
-    start = Math.max(end - maxPages + 1, 1)
-  }
-
-  return Array.from({ length: end - start + 1 }, (_, i) => start + i)
-})
+  const maxPages = 5;
+  const start = Math.max(currentPage.value - Math.floor(maxPages / 2), 1);
+  const end = Math.min(start + maxPages - 1, totalPages.value);
+  return Array.from({ length: end - start + 1 }, (_, i) => start + i);
+});
 </script>
 
 <template>
@@ -86,13 +131,28 @@ const displayedPages = computed(() => {
     <div class="p-4">
       <h2 class="text-2xl font-bold mb-4">Top Cryptocurrencies</h2>
 
-      <!-- Chart display -->
-      <canvas id="cryptoChart" class="mb-6"></canvas>
+      <v-skeleton-loader
+        v-if="loading"
+        type="card, list-item-two-line@3"
+        class="mx-auto rounded-lg"
+        max-width="1200"
+      />
 
-      <!-- Coin list display -->
+      <v-alert v-else-if="localError" type="error" class="mb-6">
+        {{ localError }}
+      </v-alert>
+
+      <canvas
+        ref="canvasRef"
+        id="cryptoChart"
+        class="mb-6"
+        height="300"
+        v-show="!loading && !localError"
+      />
+
       <ul>
         <li
-          v-for="coin in coins.slice((currentPage - 1) * 10, currentPage * 10)"
+          v-for="coin in paginatedCoins"
           :key="coin.id"
           class="border-b py-2"
         >
@@ -108,13 +168,11 @@ const displayedPages = computed(() => {
         </li>
       </ul>
 
-      <!-- Pagination controls -->
       <div class="pagination">
         <v-btn
           @click="handlePrevPage"
           :disabled="currentPage === 1"
           color="primary"
-          class="prev"
           variant="text"
         >
           Previous
@@ -125,7 +183,6 @@ const displayedPages = computed(() => {
             :key="page"
             @click="goToPage(page)"
             :color="page === currentPage ? 'secondary' : 'primary'"
-            :class="{ 'active-page': page === currentPage }"
             class="btn"
             variant="text"
           >
@@ -136,22 +193,32 @@ const displayedPages = computed(() => {
           @click="handleNextPage"
           :disabled="currentPage === totalPages"
           color="primary"
-          class="next"
           variant="text"
         >
           Next
         </v-btn>
       </div>
     </div>
-    <v-row class="mt-10 mb-10">
-      <v-col v-for="coin in coins" :key="coin.id" cols="12" sm="6" md="4" lg="3">
+
+    <!-- ✅ Full list of CoinCards (always visible) -->
+    <v-row v-if="!loading && !localError" class="mt-10 mb-10">
+      <v-col
+        v-for="coin in coins"
+        :key="coin.id"
+        cols="12"
+        sm="6"
+        md="4"
+        lg="3"
+      >
         <CoinCard :coin="coin" />
       </v-col>
     </v-row>
+
+    <p>Total coins: {{ coins.length }}</p>
   </v-container>
 </template>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .pagination {
   display: flex;
   flex-direction: column;
@@ -161,13 +228,10 @@ const displayedPages = computed(() => {
   display: flex;
   justify-content: center;
 }
-
 @media (min-width: 500px) {
   .pagination {
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-items: center;
   }
   .page-numbers {
     padding: 0 1em;
@@ -175,5 +239,9 @@ const displayedPages = computed(() => {
 }
 ul {
   list-style: none;
+}
+#cryptoChart {
+  max-height: 300px;
+  width: 100%;
 }
 </style>

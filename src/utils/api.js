@@ -1,20 +1,19 @@
+// src/utils/api.js
 import axios from 'axios';
 
 // Rate limiting constants
-const COINGECKO_RATE_LIMIT = 1000; // 1 second between requests
+const COINGECKO_RATE_LIMIT = 2000; // 2 seconds between requests
 const MAX_RETRIES = 3;
-const RETRY_DELAY = 1000; // 1 second delay between retries
+const RETRY_DELAY = 5000; // 5 seconds delay between retries
 
 // Create axios instance with base URL
 const api = axios.create({
-  baseURL: import.meta.env.DEV 
-    ? 'https://api.coingecko.com/api/v3' 
-    : '/api', // Use proxy in production
-  timeout: 10000,
+  baseURL: import.meta.env.DEV ? '/api' : '/api', // Use proxy in both dev and prod
+  timeout: 15000, // Increased timeout for slower networks
   headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'X-CoinGecko-Source': 'CryptoTracker' // Optional: Identify your application
+    'X-CoinGecko-Source': 'CryptoTracker',
   },
 });
 
@@ -26,9 +25,8 @@ api.interceptors.request.use(
   (config) => {
     const now = Date.now();
     const timeSinceLastRequest = now - lastRequestTime;
-    
+
     if (timeSinceLastRequest < COINGECKO_RATE_LIMIT) {
-      // Wait for rate limit to reset
       return new Promise((resolve) => {
         setTimeout(() => {
           lastRequestTime = Date.now();
@@ -36,13 +34,11 @@ api.interceptors.request.use(
         }, COINGECKO_RATE_LIMIT - timeSinceLastRequest);
       });
     }
-    
+
     lastRequestTime = now;
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 // Response interceptor with retry logic
@@ -50,38 +46,21 @@ api.interceptors.response.use(
   (response) => response,
   async (error) => {
     const { response, config } = error;
-    
-    if (response) {
-      // Handle rate limit errors
-      if (response.status === 429) {
-        if (!config.__retryCount) {
-          config.__retryCount = 0;
-        }
-        
-        if (config.__retryCount < MAX_RETRIES) {
-          config.__retryCount++;
-          
-          // Wait for rate limit reset
-          await new Promise(resolve => setTimeout(resolve, RETRY_DELAY * config.__retryCount));
-          
-          return api(config);
-        }
+
+    if (response?.status === 429) {
+      if (!config.__retryCount) config.__retryCount = 0;
+
+      if (config.__retryCount < MAX_RETRIES) {
+        config.__retryCount++;
+        console.warn(`Rate limit hit, retrying (${config.__retryCount}/${MAX_RETRIES}) after ${RETRY_DELAY}ms...`);
+        await new Promise(resolve => setTimeout(resolve, RETRY_DELAY));
+        return api(config);
       }
     }
 
-    // For CORS errors in development
-    if (error.request && import.meta.env.DEV) {
-      console.warn('CORS Error: Using local proxy for development');
-      // In development, we can use a proxy to bypass CORS
-      config.baseURL = '/api'; // Proxy configured in vite.config.js
-      return api(config);
-    }
-
-    // For other errors, throw with more descriptive message
-    const errorMessage = response 
-      ? `API Error ${response.status}: ${response.statusText}` 
+    const errorMessage = response
+      ? `API Error ${response.status}: ${response.statusText}`
       : `Network Error: ${error.message}`;
-    
     throw new Error(errorMessage);
   }
 );
