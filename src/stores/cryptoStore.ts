@@ -65,7 +65,9 @@ export const useCryptoStore = defineStore('crypto', () => {
 
       if (coinListCache.value.size > 10) {
         const firstKey = coinListCache.value.keys().next().value;
-        coinListCache.value.delete(firstKey);
+        if (firstKey !== undefined) {
+          coinListCache.value.delete(firstKey);
+        }
       }
     } catch (err: any) {
       error.value = err.message || 'Failed to fetch crypto data';

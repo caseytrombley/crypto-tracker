@@ -22,17 +22,25 @@ import { defineProps } from 'vue'
 import { useRouter } from 'vue-router'
 import { useTheme } from 'vuetify'
 
-const theme = useTheme()
+interface Coin {
+  id: string
+  name: string
+  symbol: string
+  current_price: number
+}
 
-const props = defineProps({
-  coin: Object,
-})
+const props = defineProps<{ coin: Coin }>()
+
+
+const theme = useTheme()
 
 const router = useRouter()
 
 const goToCoinDetail = () => {
+  if (!props.coin?.id) return
   router.push(`/coin/${props.coin.id}`)
 }
+
 </script>
 
 <style scoped>

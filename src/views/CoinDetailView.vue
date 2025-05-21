@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, watch, nextTick, onUnmounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { Chart, registerables } from 'chart.js';
+import { Chart, registerables, type ChartOptions, type TooltipItem } from 'chart.js';
 import { useCryptoStore } from '@/stores/cryptoStore';
 import api from '@/utils/api';
 
@@ -70,7 +70,9 @@ const fetchCoinData = async () => {
 
     if (coinCache.value.size > 50) {
       const firstKey = coinCache.value.keys().next().value;
-      coinCache.value.delete(firstKey);
+      if (firstKey !== undefined) {
+        coinCache.value.delete(firstKey);
+      }
     }
 
     coin.value = response.data;
@@ -93,11 +95,11 @@ const updateChart = () => {
 
   if (chartInstance.value) chartInstance.value.destroy();
 
-  const prices = coin.value.market_data.sparkline_7d.price;
+  const prices: number[] = coin.value.market_data.sparkline_7d.price;
   const now = new Date();
   const interval = (7 * 24 * 60 * 60 * 1000) / prices.length;
 
-  const dates = prices.map((_, i) => {
+  const dates = prices.map((_: number, i: number) => {
     const date = new Date(now.getTime() - (prices.length - 1 - i) * interval);
     return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric' });
   });
@@ -132,30 +134,45 @@ const updateChart = () => {
         legend: { display: false },
         tooltip: {
           backgroundColor: 'rgba(17, 24, 39, 0.9)',
-          titleFont: { size: 14, weight: '500' },
+          titleFont: { size: 14, weight: 500 },
           bodyFont: { size: 14 },
           padding: 12,
           displayColors: false,
           callbacks: {
-            label: (context) => `$${context.parsed.y.toLocaleString()}`,
+            label: (context: TooltipItem<'line'>) => `$${context.parsed.y.toLocaleString()}`,
           },
         },
       },
       scales: {
         x: {
-          grid: { display: false, drawBorder: false },
-          ticks: { color: '#9CA3AF', font: { size: 12 } },
-        },
-        y: {
-          grid: { color: 'rgba(156, 163, 175, 0.1)', drawBorder: false },
+          grid: {
+            display: false,
+            border: {
+              display: false,
+            },
+          },
           ticks: {
             color: '#9CA3AF',
             font: { size: 12 },
-            callback: (value: number) => `$${value}`,
+          },
+        },
+        y: {
+          grid: {
+            color: 'rgba(156, 163, 175, 0.1)',
+            border: {
+              display: false,
+            },
+          },
+          ticks: {
+            color: '#9CA3AF',
+            font: { size: 12 },
+            callback(this: any, tickValue: string | number) {
+              return `$${Number(tickValue).toLocaleString()}`;
+            },
           },
         },
       },
-    },
+    } as ChartOptions<'line'>,
   });
 };
 

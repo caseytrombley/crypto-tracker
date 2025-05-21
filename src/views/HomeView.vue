@@ -59,10 +59,17 @@ const renderChart = async () => {
         legend: { display: true, position: 'top' },
       },
       scales: {
-        x: { ticks: { maxRotation: 45, minRotation: 45 } },
+        x: {
+          ticks: {
+            maxRotation: 45,
+            minRotation: 45,
+          },
+        },
         y: {
           ticks: {
-            callback: (value: number) => `$${value.toLocaleString()}`,
+            callback(this: any, tickValue: string | number): string {
+              return `$${Number(tickValue).toLocaleString()}`;
+            },
           },
         },
       },
@@ -124,6 +131,7 @@ const displayedPages = computed(() => {
   return Array.from({ length: end - start + 1 }, (_, i) => start + i);
 });
 </script>
+
 
 <template>
   <v-container fluid max-width="1200px">
