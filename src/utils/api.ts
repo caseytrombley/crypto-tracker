@@ -8,8 +8,8 @@ const RETRY_DELAY = 5000; // 5 seconds delay between retries
 
 // Create axios instance with base URL
 const api = axios.create({
-  baseURL: import.meta.env.DEV ? '/api' : '/api', // Use proxy in both dev and prod
-  timeout: 15000, // Increased timeout for slower networks
+  baseURL: 'https://api.coingecko.com/api/v3',  // Use full CoinGecko API URL
+  timeout: 15000,
   headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
