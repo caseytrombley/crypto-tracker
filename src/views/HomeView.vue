@@ -36,19 +36,34 @@ const renderChart = async () => {
   }
 
   const labels = paginatedCoins.value.map((coin) => coin.symbol.toUpperCase());
-  const data = paginatedCoins.value.map((coin) => coin.market_cap || 0);
+  const marketCapData = paginatedCoins.value.map((coin) => coin.market_cap || 0);
+  const priceData = paginatedCoins.value.map((coin) => coin.current_price || 0);
 
   chartInstance.value = new Chart(ctx, {
-    type: 'bar',
+    type: 'bar', // base chart type
     data: {
       labels,
       datasets: [
         {
+          type: 'bar', // Bar dataset for market cap
           label: 'Market Cap (USD)',
-          data,
+          data: marketCapData,
           backgroundColor: 'rgba(99, 102, 241, 0.4)',
           borderColor: 'rgb(99, 102, 241)',
           borderWidth: 1,
+          yAxisID: 'y', // reference y axis id
+        },
+        {
+          type: 'line', // Line dataset for current price
+          label: 'Current Price (USD)',
+          data: priceData,
+          borderColor: 'rgb(244, 67, 54)',
+          backgroundColor: 'rgba(244, 67, 54, 0.2)',
+          fill: false,
+          tension: 0.2,
+          yAxisID: 'y1', // reference second y axis
+          borderWidth: 2,
+          pointRadius: 3,
         },
       ],
     },
@@ -66,16 +81,39 @@ const renderChart = async () => {
           },
         },
         y: {
+          type: 'linear',
+          position: 'left',
           ticks: {
             callback(this: any, tickValue: string | number): string {
               return `$${Number(tickValue).toLocaleString()}`;
             },
+          },
+          title: {
+            display: true,
+            text: 'Market Cap',
+          },
+        },
+        y1: {
+          type: 'linear',
+          position: 'right',
+          grid: {
+            drawOnChartArea: false, // only want grid on left y-axis
+          },
+          ticks: {
+            callback(this: any, tickValue: string | number): string {
+              return `$${Number(tickValue).toLocaleString()}`;
+            },
+          },
+          title: {
+            display: true,
+            text: 'Price',
           },
         },
       },
     },
   });
 };
+
 
 const loadPage = async (page: number) => {
   loading.value = true;
