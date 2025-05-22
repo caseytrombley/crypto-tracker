@@ -236,7 +236,6 @@ const displayedPages = computed(() => {
       </v-col>
     </v-row>
 
-    <p>Total coins: {{ coins.length }}</p>
   </v-container>
 </template>
 
